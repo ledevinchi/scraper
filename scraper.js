@@ -1,29 +1,20 @@
 const puppeteer = require('puppeteer');
-const UserAgent = require('user-agents');
 
-exports.scrape = async () => {
-    const browser = await puppeteer.launch({ headless: false, args: [`--window-size=1920,1080`], defaultViewport: null });
-    //args: [`--window-size=800,800`], defaultViewport: null
-    //const context = await browser.createIncognitoBrowserContext();
+exports.scrape = async (keysearch) => {
+    //'--no-sandbox', '--disable-setuid-sandbox'
+    //headless: false, args: [`--window-size=1920,1080`], defaultViewport: null
+    const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox', '--window-size=1920,1080'], defaultViewport: null });
+
     const page = await browser.newPage();
-
-
-
+    //page.on('console', consoleObj => console.log(consoleObj.text()));
     await page.setUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36");
+    await page.setCacheEnabled(false);
 
-    //var urls = await getpropertiesurls(page, '32205');
 
-    //var tmpurl = 'https://www.zillow.com/homedetails/13-Gardenvale-Dr-Cheektowaga-NY-14225/30284764_zpid/';
-    //var tmpurl = "https://www.zillow.com/homedetails/27-Dorothy-Ave-Rochester-NY-14615/30848328_zpid/";
-
-    //var tmpurl = 'https://www.zillow.com/homedetails/906-Greenridge-Rd-Jacksonville-FL-32207/44483311_zpid/'
-    //var tmpurl = 'https://www.zillow.com/homedetails/2973-Riverside-Ave-Jacksonville-FL-32205/44479421_zpid/';
-    //var tmpurl = "https://www.zillow.com/homedetails/1427-Rensselaer-Ave-Jacksonville-FL-32205/44489389_zpid/";
-    var tmpurl = "https://www.zillow.com/homedetails/1552-E-11th-St-Jacksonville-FL-32206/44519429_zpid/";
-    const p = await getpropertyjson(page, tmpurl);
-    console.log('========================');
-    console.log('property: ', p);
-    browser.close();
+    //var urls = await getpropertiesurls(page, keysearch);
+    const p = await urlstoproperties(page, keysearch);
+    await browser.close();
+    return p;
 }
 
 async function getpropertiesurls(page, searchkey) {
@@ -36,7 +27,6 @@ async function getpropertiesurls(page, searchkey) {
 }
 
 async function pageurls(page, urls, pnumber, max) {
-    console.log(`run: nam-${pnumber} max-${max}`);
     var p = await page.evaluate(() => {
         var pa = document.querySelectorAll('div.search-pagination ul li.PaginationNumberItem-c11n-8-10-0__bnmlxt-0 a');
         var arr = [];
@@ -81,51 +71,55 @@ async function pageurls(page, urls, pnumber, max) {
 }
 
 async function getpropertyjson(page, url) {
-    console.log('url: ', url);
+    //console.log(url);
     await page.goto(url, { waitUntil: 'networkidle0', });
-    const sel = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile > ul li img'
-    await page.waitForSelector(sel, { visible: true });
+
+    const sel = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile'
+
+    const u = await page.url();
+    console.log('url: ', u);
+    if(u.toLowerCase().indexOf('captcha') != -1) await page.goto(url, { waitUntil: 'networkidle0', });
+
+    await page.waitForSelector(sel, { visible: true }).catch(e => {
+        console.error('could not load selector');
+    });
 
     // ==== get images ====
     const images = await getimages(page);
-    console.log('imgs: ', images);
 
     // ==== get bedrooms, bathrooms, size, address ====
     const header = await getheader(page);
-    console.log('header: ', header);
 
     // ==== get overview ====
     const ov = await getoverview(page);
-    console.log('overview: ', ov);
 
     // ==== get facts and features ====
     const faf = await getfactsandfeatures(page);
-    console.log('facts: ', faf);
 
     //==== get price history ====
     const ph = await getpricehistory(page);
-    console.log('price history: ', ph);
 
     return {
+        zurl: url,
         images: images,
         address: header.address,
-        general:{
-            bedrooms: header.bedrooms,
-            bathrooms: header.bathrooms,
-            size: header.size,
+        general: {
+            bedrooms: faf.bedrooms,
+            bathrooms: faf.bathrooms,
+            size: faf.size,
             salestatus: header.salestatus,
             price: header.price,
             daysonmarket: ov.daysonmarket
         },
         description: ov.description,
-        specs: faf,
+        specs: faf.spec,
         pricehistory: ph
     };
 }
 
 async function getimages(page) {
 
-    const lilen = await page.evaluate(() => {
+    await page.evaluate(() => {
         const selq = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile ul li';
         let lis = document.querySelectorAll(selq);
 
@@ -135,15 +129,24 @@ async function getimages(page) {
                 el.scrollIntoView({ behavior: "smooth", block: "end", inline: "end" });
             }, 10);
         }
-        const selector = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile';
-        const elem = document.querySelector(selector);
-        elem.scrollTop = elem.scrollHeight;
-
-        return elem.scrollHeight;
+        setTimeout(() => {
+            const selector = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile';
+            const elem = document.querySelector(selector);
+            elem.scrollTop = elem.scrollHeight;
+            console.log('== hight: ', elem.scrollHeight);
+        }, 30)
     });
-
-    await page.waitForSelector('#ds-container > div.ds-media-col.ds-media-col-hidden-mobile > ul li figure');
-
+    try {
+        await page.waitForSelector('#ds-container ul li figure').catch(e => {
+            console.warn('Warning: not all image loaded');
+            console.log(e);
+        });
+    }
+    catch (error) {
+        console.warn('Warning: not all image loaded');
+        console.log(error);
+        
+    }
     const imgs = await page.evaluate(() => {
         const sel = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile > ul > li button img';
         var im = document.querySelectorAll(sel);
@@ -159,21 +162,14 @@ async function getimages(page) {
 
 async function getheader(page) {
     const res = await page.evaluate(() => {
-        const bd = document.querySelector('#ds-container header.ds-bed-bath-living-area-header > h3 > span:nth-child(1) > span:nth-child(1)').innerText;
-        const ba = document.querySelector('#ds-container header.ds-bed-bath-living-area-header > h3 > button > span > span:nth-child(1)').innerText;
-        const sqf = document.querySelector('#ds-container header.ds-bed-bath-living-area-header > h3 > span:nth-child(5) > span:nth-child(1)').innerText;
-
         const price = document.querySelector('#ds-container div.ds-summary-row-container div h3 span.ds-value').innerText.replace(/[^0-9]+/g, "");
 
-        const salestatus = document.querySelector('#ds-container > div.ds-data-col.ds-white-bg.ds-data-col-data-forward > div.ds-chip > div > div.sc-oUcyK.lbUOdM.ds-chip-removable-content > p > span.sc-pzMyG.ijxQnZ.ds-status-details').innerText;
+        const salestatus = document.querySelector('#ds-container div.ds-data-col.ds-white-bg.ds-data-col-data-forward div.ds-chip div.sc-oUcyK.lbUOdM.ds-chip-removable-content span.sc-pzMyG.ijxQnZ.ds-status-details').innerText;
 
         const add1 = document.querySelector('#ds-container header > h1.ds-address-container > span:nth-child(1)').innerText;
         const add2 = document.querySelector('#ds-container header > h1.ds-address-container > span:nth-child(2)').innerText;
 
         return {
-            bedrooms: parseInt(bd),
-            bathrooms: parseInt(ba),
-            size: parseInt(sqf.replace(',', '')),
             price: parseInt(price),
             salestatus: salestatus,
             address: {
@@ -223,8 +219,6 @@ async function getfactsandfeatures(page) {
         btn.click();
     });
 
-    // const sel = '#ds-data-view > ul > li:nth-child(5) > div > div > div.sc-19crqy3-4.hKgoUm > div:nth-child(1) > div > div:nth-child(2) > ul > li > span'
-    // await page.waitForSelector(sel, { visible: true });
     const faf = await page.evaluate(() => {
         // ==== helper function ====
         function trimdot(str) {
@@ -246,10 +240,10 @@ async function getfactsandfeatures(page) {
         //===========================
 
         //general info 
-        var type, yearbuiled, sewer, watersource;
+        var type, yearbuiled, sewer, watersource, size;
 
         // Interior details
-        var heating, cooling, flooring, appliances, stories, basement, extra;
+        var heating, cooling, flooring, appliances, stories, basement, extra, bedrooms, bathrooms;
 
         // Exterior details 
         var exmaterial, parking, roof, conmaterial, foundation, lot;
@@ -271,8 +265,15 @@ async function getfactsandfeatures(page) {
                 case 'utility':
                     sewer = getval(ul, 'sewerinformation');
                     break;
+                case 'other interior features':
+                    size = parseInt(getval(ul, 'totalinteriorlivablearea').replace(/[^0-9]+/g, ""));
+                    break;
 
                 // Interior details
+                case 'bedrooms and bathrooms':
+                    bedrooms = parseInt(getval(ul, 'bedrooms'));
+                    bathrooms = parseInt(getval(ul, 'bathrooms'));
+                    break;
                 case 'cooling':
                     cooling = getval(ul, 'coolingfeatures');
                     break;
@@ -318,30 +319,35 @@ async function getfactsandfeatures(page) {
         if (et != undefined) extra = et.split(', ');
 
         return {
-            general: {
-                type: type,
-                yearbuiled: parseInt(yearbuiled),
-                sewer: sewer,
-                watersource: watersource
-            },
-            interiordetails: {
-                heating: heating,
-                cooling: cooling,
-                flooring: flooring,
-                appliances: appliances,
-                stories: stories,
-                basement: basement,
-                extra: extra
-            },
-            exteriordetails: {
-                parking: parking,
-                foundation: foundation,
-                exteriormaterial: exmaterial,
-                constructionmaterials: conmaterial,
-                roofmaterial: roof,
-                lot: lot
+            size: size,
+            bathrooms: bathrooms,
+            bedrooms: bedrooms,
+            spec: {
+                general: {
+                    type: type,
+                    yearbuiled: parseInt(yearbuiled),
+                    sewer: sewer,
+                    watersource: watersource
+                },
+                interiordetails: {
+                    heating: heating,
+                    cooling: cooling,
+                    flooring: flooring,
+                    appliances: appliances,
+                    stories: stories,
+                    basement: basement,
+                    extra: extra
+                },
+                exteriordetails: {
+                    parking: parking,
+                    foundation: foundation,
+                    exteriormaterial: exmaterial,
+                    constructionmaterials: conmaterial,
+                    roofmaterial: roof,
+                    lot: lot
+                }
             }
-        };
+        }
     });
     return faf;
 }
@@ -352,7 +358,7 @@ async function getpricehistory(page) {
 
         const tfoot = table.querySelector('tfoot button');
 
-        if(tfoot != undefined){
+        if (tfoot != undefined) {
             tfoot.click();
             tfoot.scrollIntoView({ behavior: "smooth", block: "end", inline: "end" });
         }
@@ -366,7 +372,7 @@ async function getpricehistory(page) {
             let d = new Date(date);
             let event = tds[1].innerText;
             let price = parseInt(tds[2].innerText.replace(/[^0-9]+/g, ""));
-            if(price == null) price = undefined;
+            if (price == null) price = undefined;
             phl.push({
                 date: d.getTime(),
                 event: event,
@@ -376,4 +382,14 @@ async function getpricehistory(page) {
         return phl;
     });
     return ph;
+}
+
+async function urlstoproperties(page, urls) {
+    const properties = [];
+    for (let i = 0; i < urls.length; i++) {
+        const e = urls[i];
+        let tmp = await getpropertyjson(page, e);
+        properties.push(tmp);
+    }
+    return properties;
 }
