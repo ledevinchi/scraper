@@ -1,18 +1,39 @@
-const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer-extra');
+const pluginStealth = require('puppeteer-extra-plugin-stealth')
+const fs = require('fs');
+const solve = require('./solver');
+
+const ua = [
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36',
+    'Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/86.0.4240.93 Mobile/15E148 Safari/604.1',
+    'Mozilla/5.0 (Linux; Android 10; SM-A705FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.185 Mobile Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 10; SM-A305F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.114 Mobile Safari/537.36 GSA/11.30.9.21.arm64'
+];
+
+const banList = ['vacantland', 'apartment', 'condo', 'manufactured'];
 
 exports.scrape = async (keysearch) => {
     //'--no-sandbox', '--disable-setuid-sandbox'
-    //headless: false, args: [`--window-size=1920,1080`], defaultViewport: null
-    const browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox', '--window-size=1920,1080'], defaultViewport: null });
+    puppeteer.use(pluginStealth());
+    const browser = await puppeteer.launch({
+        headless: true,
+        args: [
+            '--window-size=1920,1080',
+            '--no-sandbox',
+            '--disable-dev-shm-usage',
+        ],
+        defaultViewport: null
+    });
 
     const page = await browser.newPage();
     //page.on('console', consoleObj => console.log(consoleObj.text()));
-    await page.setUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36");
-    await page.setCacheEnabled(false);
+    await page.setUserAgent(ua[0]);
+    page.setDefaultNavigationTimeout(0);
 
-
-    //var urls = await getpropertiesurls(page, keysearch);
-    const p = await urlstoproperties(page, keysearch);
+    console.log('getting links...');
+    var urls = await getpropertiesurls(page, '32205');
+    console.log(`found ${urls.length} links, getting data start...`);
+    const p = await urlstoproperties(page, urls);
     await browser.close();
     return p;
 }
@@ -37,7 +58,7 @@ async function pageurls(page, urls, pnumber, max) {
         const e = p[i];
         if (e.page == pnumber) {
             await page.goto(`https://www.zillow.com${e.href}`);
-            console.log('href: ', e.href);
+            //console.log('href: ', e.href);
             break;
         }
     }
@@ -72,49 +93,78 @@ async function pageurls(page, urls, pnumber, max) {
 
 async function getpropertyjson(page, url) {
     //console.log(url);
-    await page.goto(url, { waitUntil: 'networkidle0', });
-
-    const sel = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile'
-
+    await page.goto(url, { waitUntil: 'networkidle0', timeout: 0 });
     const u = await page.url();
     console.log('url: ', u);
-    if(u.toLowerCase().indexOf('captcha') != -1) await page.goto(url, { waitUntil: 'networkidle0', });
+    if (u.toLowerCase().indexOf('captcha') != -1) {
+        console.warn('Warning: recaptcha, retrying...');
+        await solve(page);
 
-    await page.waitForSelector(sel, { visible: true }).catch(e => {
-        console.error('could not load selector');
+        await page.waitForNavigation({ waitUntil: 'networkidle0' })
+        const cu = await page.url();
+        console.log('== current url: ', cu);
+    };
+
+    const sel = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile'
+    const res = await page.waitForSelector(sel, { visible: true, timeout: 20000 }).catch((e) => {
+        console.error('Could not load selector, retrying...');
+        return 'error';
     });
 
-    // ==== get images ====
-    const images = await getimages(page);
+    if (res == 'error') {
+        const cu = await page.url();
+        if (cu == url) {
+            await page.goto(url, { waitUntil: 'networkidle0', timeout: 0 });
+            const r = await page.waitForSelector(sel, { visible: true, timeout: 20000 }).then(() => {
+                return true;
+            }).catch(e => {
+                return 'error';
+            });
+            if (r == 'error') return undefined;
+        }
+    }
 
-    // ==== get bedrooms, bathrooms, size, address ====
-    const header = await getheader(page);
 
-    // ==== get overview ====
-    const ov = await getoverview(page);
+    try {
 
-    // ==== get facts and features ====
-    const faf = await getfactsandfeatures(page);
+        // ==== get facts and features ====
+        const faf = await getfactsandfeatures(page);
 
-    //==== get price history ====
-    const ph = await getpricehistory(page);
+        if(isBan(faf.spec.general.type)) { console.log('Ban - skip property'); return 'skip'; }
 
-    return {
-        zurl: url,
-        images: images,
-        address: header.address,
-        general: {
-            bedrooms: faf.bedrooms,
-            bathrooms: faf.bathrooms,
-            size: faf.size,
-            salestatus: header.salestatus,
-            price: header.price,
-            daysonmarket: ov.daysonmarket
-        },
-        description: ov.description,
-        specs: faf.spec,
-        pricehistory: ph
-    };
+        // ==== get images ====
+        const images = await getimages(page);
+
+        // ==== get bedrooms, bathrooms, size, address ====
+        const header = await getheader(page);
+
+        // ==== get overview ====
+        const ov = await getoverview(page);
+
+        //==== get price history ====
+        const ph = await getpricehistory(page);
+
+        return {
+            zurl: url,
+            images: images,
+            address: header.address,
+            general: {
+                bedrooms: faf.bedrooms,
+                bathrooms: faf.bathrooms,
+                size: faf.size,
+                salestatus: header.salestatus,
+                price: header.price,
+                daysonmarket: ov.daysonmarket
+            },
+            description: ov.description,
+            specs: faf.spec,
+            pricehistory: ph
+        };
+    }
+    catch (e) {
+        console.log(`== getpropertyjson() url: ${url}, \n== error: ` + e);
+        return undefined;
+    }
 }
 
 async function getimages(page) {
@@ -145,7 +195,7 @@ async function getimages(page) {
     catch (error) {
         console.warn('Warning: not all image loaded');
         console.log(error);
-        
+
     }
     const imgs = await page.evaluate(() => {
         const sel = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile > ul > li button img';
@@ -356,6 +406,7 @@ async function getpricehistory(page) {
     const ph = await page.evaluate(() => {
         const table = document.querySelector('div#ds-data-view div.sc-1ezbn92-4.cZFcDZ table.sc-1ezbn92-2.hxLCYs');
 
+        if (table == null || table == undefined) return undefined;
         const tfoot = table.querySelector('tfoot button');
 
         if (tfoot != undefined) {
@@ -386,10 +437,26 @@ async function getpricehistory(page) {
 
 async function urlstoproperties(page, urls) {
     const properties = [];
-    for (let i = 0; i < urls.length; i++) {
+    var scount = 0;
+    for (let i = 0; i <  35/*urls.length*/; i++) {
         const e = urls[i];
         let tmp = await getpropertyjson(page, e);
-        properties.push(tmp);
+        if (tmp != undefined && tmp != 'skip')
+            properties.push(tmp);
+        else if(tmp == 'skip')
+        scount++;
     }
+    console.log('writing to file...')
+    fs.writeFileSync('lastrun.json', JSON.stringify(properties));
+    console.log(`done getting properties. --success: ${properties.length} --,   --failed: ${(urls.length - properties.length)} --,  -- skiped: ${scount} --`);
     return properties;
+}
+
+function isBan(type){
+    for (let i = 0; i < banList.length; i++) {
+        const e = banList[i];
+        if(e == type.toLowerCase().replace(/\s+/g, ''))
+            return true;
+    }
+    return false;
 }

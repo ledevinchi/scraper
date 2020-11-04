@@ -1,0 +1,2791 @@
+[
+    {
+        "zurl": "https://www.zillow.com/homedetails/848-Granville-Rd-Jacksonville-FL-32205/44414684_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=848+Granville+Rd%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=ocW5X1Zjma9yDcctkM_v3aYgaDY="
+        ],
+        "address": {
+            "street": "848 Granville Rd",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "size": 768,
+            "salestatus": "",
+            "price": 10306,
+            "daysonmarket": 414
+        },
+        "description": "This 768 square foot single family home has 2 bedrooms and 1.0 bathrooms. This home is located at 848 Granville Rd, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1950
+            },
+            "interiordetails": {
+                "cooling": "Wall",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "exteriormaterial": "Shingle",
+                "lot": "0.25 Acres"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1564693200000,
+                "event": "Sold",
+                "price": 5000
+            },
+            {
+                "date": 1553724000000,
+                "event": "Sold",
+                "price": 2900
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/5251-Poppy-Dr-Jacksonville-FL-32205/44474084_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=5251+Poppy+Dr%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=9r_TQdd7_mmhYHkracN_8RG9fus="
+        ],
+        "address": {
+            "street": "5251 Poppy Dr",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "size": 1422,
+            "salestatus": "",
+            "price": 150841,
+            "daysonmarket": 303
+        },
+        "description": "This 1422 square foot single family home has 3 bedrooms and 1.0 bathrooms. This home is located at 5251 Poppy Dr, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1955
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Carport",
+                "exteriormaterial": "Other, Cement / Concrete",
+                "lot": "0.25 Acres"
+            }
+        }
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/1128-Denaud-St-Jacksonville-FL-32205/44474400_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/2d822bd4b1d04729af9792a91597c3ab-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/15faacc8284c8045c3931e0edf936ad0-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/53821c7fa477a0fe73179a43f3bf7d31-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d37b3fd694d69600601a6ae465868a70-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/ffb77d1f8cf4b5ae314ed10c6ded9311-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/a56830e6336e41c45fa7828c7252a65e-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "1128 Denaud St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "size": 1186,
+            "salestatus": "",
+            "price": 136610,
+            "daysonmarket": 281
+        },
+        "description": "This home sits on a corner lot which is full of beautiful trees. The house is large enough to add an additional bedroom and bathroom. Single care garage. This house is priced for a wholesale transaction. Zillow value range is $76K to $102K, the City of Jacksonville has valued this property for the current year at $84K. The seller is offering this concrete block home in the Murry Hill area for only pennies on the dollar at $36,800. Make a reasonable offer and let's see what happens.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1951
+            },
+            "interiordetails": {
+                "heating": "Forced air, Heat pump, Electric",
+                "cooling": "Central",
+                "appliances": [
+                    "Range / Oven",
+                    "Refrigerator"
+                ],
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage, Garage - Attached",
+                "exteriormaterial": "Cement / Concrete",
+                "lot": "9,199 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1514671200000,
+                "event": "Listing removed",
+                "price": 78900
+            },
+            {
+                "date": 1509919200000,
+                "event": "Price change",
+                "price": 78900
+            },
+            {
+                "date": 1504472400000,
+                "event": "Listed for sale",
+                "price": 79900
+            },
+            {
+                "date": 1359410400000,
+                "event": "Listing removed",
+                "price": 47700
+            },
+            {
+                "date": 1357164000000,
+                "event": "Price change",
+                "price": 47700
+            },
+            {
+                "date": 1357077600000,
+                "event": "Price change",
+                "price": 49700
+            },
+            {
+                "date": 1284674400000,
+                "event": "Listing removed",
+                "price": 900
+            },
+            {
+                "date": 1280955600000,
+                "event": "Listed for rent",
+                "price": 900
+            },
+            {
+                "date": 1274648400000,
+                "event": "Sold",
+                "price": 29000
+            },
+            {
+                "date": 1260741600000,
+                "event": "Sold",
+                "price": 29000
+            },
+            {
+                "date": 1260050400000,
+                "event": "Price change",
+                "price": 36800
+            },
+            {
+                "date": 1255903200000,
+                "event": "Price change",
+                "price": 35000
+            },
+            {
+                "date": 1251752400000,
+                "event": "Price change",
+                "price": 42500
+            },
+            {
+                "date": 1248901200000,
+                "event": "Price change",
+                "price": 49900
+            },
+            {
+                "date": 1248037200000,
+                "event": "Listed for sale",
+                "price": null
+            },
+            {
+                "date": 1242680400000,
+                "event": "Sold",
+                "price": 80500
+            },
+            {
+                "date": 864939600000,
+                "event": "Sold",
+                "price": 43900
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/3039-Rosselle-St-Jacksonville-FL-32205/44470910_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=3039+Rosselle+St%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=WtyKq_KHPpCZRHP9GOs2An9jzzo="
+        ],
+        "address": {
+            "street": "3039 Rosselle St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "size": 908,
+            "salestatus": "",
+            "price": 89855,
+            "daysonmarket": 321
+        },
+        "description": "Ready and waiting!This 3 bedroom 2 bath home offers, Living and Dining Room, Equipped Kitchen, Carpet and hardwood flooring. Inside laundry room w/washer and dryer hook ups. Central heat and air and back patio. Situated on a Large fenced back yard. Hud OK!",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1929
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "exteriormaterial": "Other",
+                "lot": "4,040 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1287698400000,
+                "event": "Listing removed",
+                "price": 850
+            },
+            {
+                "date": 1285279200000,
+                "event": "Listed for rent",
+                "price": 850
+            },
+            {
+                "date": 1146690000000,
+                "event": "Sold",
+                "price": 68000
+            },
+            {
+                "date": 1143583200000,
+                "event": "Sold",
+                "price": 64000
+            },
+            {
+                "date": 1139263200000,
+                "event": "Sold",
+                "price": null
+            },
+            {
+                "date": 1136412000000,
+                "event": "Sold",
+                "price": null
+            },
+            {
+                "date": 1134684000000,
+                "event": "Sold",
+                "price": null
+            },
+            {
+                "date": 1098655200000,
+                "event": "Sold",
+                "price": 74900
+            },
+            {
+                "date": 1073512800000,
+                "event": "Sold",
+                "price": 35700
+            },
+            {
+                "date": 1067378400000,
+                "event": "Sold",
+                "price": null
+            },
+            {
+                "date": 987454800000,
+                "event": "Sold",
+                "price": 26000
+            },
+            {
+                "date": 975967200000,
+                "event": "Sold",
+                "price": null
+            },
+            {
+                "date": 930171600000,
+                "event": "Sold",
+                "price": 53900
+            },
+            {
+                "date": 917215200000,
+                "event": "Sold",
+                "price": 15000
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/3026-Oak-St-Jacksonville-FL-32205/44479439_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/46bf5d2a4f3ee84dc74a00637aed40ea-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/9b3d4340d58027f776cb51567b81b8b4-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/25937395758cf792b72d079b23581088-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/39c3640e8b79301e94988331b370f0a0-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b372b65735eb9ed90c80c51ad5e209a8-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/0f6c9ef498e1c0301688a33103371985-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/8e5c2c8a1e79dd7bf7ce644046c10289-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/56f034b9fffc9d0e37c415e36ccd6ea2-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d5982bce9918a03a144b7bf2bdb1a966-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/cea10ca35bcf1c9a814757087c04a077-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/cee01fdcac532195a21e55cf0c25cf3c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/7dd641c3b6c4b85d2ef17f3c80bfa629-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/baa2bca2c63c2278ed6eeaa4c31c893a-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/5d5dd5837665a0d7c00ba6db6f08b08d-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/75cc5b5a07facaae59f26f7f5f6676a3-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/6f12a50d8cf3e75d95cfdfcb32acaa39-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/3b8094f4e389c877166a8367d9037cce-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/449f47fde803c06b037cd4822c7e1bfc-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/abc48d6b86147bd8aa5cee4930ee9690-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/8eed4d9a582c1185b8499c620cff35e0-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d0f8b7fb689ed5ee706d1628898e38d4-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/5fc6c7cc434e15405586561e2568e844-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/590367fd8cf62c3bf8049c1efee74317-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "3026 Oak St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "size": 2110,
+            "salestatus": "",
+            "price": 431309,
+            "daysonmarket": 240
+        },
+        "description": "Amazing Opportunity To Own A Beautiful, Historic Home Near Shopping, Dining And Parks. This 3 Bedroom, 2 Bath Home Is Full of Charm And Character And Is Ready For New Owners To Make It Their Own. Enjoy Evenings On The Roomy Front Porch; Gorgeous Built Ins Upstairs, Wood Floors, 2 Fireplaces, And A Spacious Attic. Two Car Detached Garage Has Plenty of Storage.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1911
+            },
+            "interiordetails": {
+                "heating": "Forced air, Heat pump, Electric",
+                "cooling": "Central",
+                "appliances": [
+                    "Dishwasher",
+                    "Dryer",
+                    "Microwave",
+                    "Range / Oven",
+                    "Refrigerator"
+                ],
+                "stories": 2
+            },
+            "exteriordetails": {
+                "parking": "Garage, Garage - Detached, Covered",
+                "exteriormaterial": "Shingle",
+                "lot": "9,148 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1363644000000,
+                "event": "Sold",
+                "price": 210000
+            },
+            {
+                "date": 1362175200000,
+                "event": "Listing removed",
+                "price": 225000
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/3209-Phyllis-St-2-Jacksonville-FL-32205/154616098_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=3209+Phyllis+St%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=choEtKbwdVPM-tBzUYteWClYn3M="
+        ],
+        "address": {
+            "street": "3209 Phyllis St #2",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 6,
+            "bathrooms": 3,
+            "size": 2204,
+            "salestatus": "",
+            "price": 181512,
+            "daysonmarket": 299
+        },
+        "description": "This 2204 square foot multi family home has 6 bedrooms and 3.0 bathrooms. This home is located at 3209 Phyllis St #2, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Multiple Occupancy",
+                "yearbuiled": 1987
+            },
+            "interiordetails": {
+                "heating": "Electric",
+                "cooling": "Central",
+                "stories": 2
+            },
+            "exteriordetails": {
+                "parking": "Garage",
+                "exteriormaterial": "Stucco",
+                "lot": "5,111 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1578607200000,
+                "event": "Sold",
+                "price": 62600
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/5424-Carder-St-Jacksonville-FL-32205/44473225_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=5424+Carder+St%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=96_jKJKBbvAjznsZz1CtedHDxEI="
+        ],
+        "address": {
+            "street": "5424 Carder St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "size": 1862,
+            "salestatus": "",
+            "price": 192751,
+            "daysonmarket": 286
+        },
+        "description": "This 1862 square foot single family home has 3 bedrooms and 2.0 bathrooms. This home is located at 5424 Carder St, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1960
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage",
+                "exteriormaterial": "Cement / Concrete",
+                "lot": "0.25 Acres"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 905292000000,
+                "event": "Sold",
+                "price": 71600
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/1109-Mcduff-Ave-S-Jacksonville-FL-32205/44470587_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=1109+McDuff+Ave+S%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=xQVJBqC8wTQa6EuYrWWfxpBfAiw="
+        ],
+        "address": {
+            "street": "1109 Mcduff Ave S",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "size": 1674,
+            "salestatus": "",
+            "price": 277549,
+            "daysonmarket": 255
+        },
+        "description": "This 1674 square foot single family home has 3 bedrooms and 1.0 bathrooms. This home is located at 1109 Mcduff Ave S, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1943
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "stories": 2
+            },
+            "exteriordetails": {
+                "exteriormaterial": "Composition",
+                "lot": "4,400 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1603922400000,
+                "event": "Listing removed",
+                "price": null
+            },
+            {
+                "date": 1601845200000,
+                "event": "Listed for sale",
+                "price": null
+            },
+            {
+                "date": 1595451600000,
+                "event": "Listing removed",
+                "price": null
+            },
+            {
+                "date": 1593464400000,
+                "event": "Listed for sale",
+                "price": null
+            },
+            {
+                "date": 1586466000000,
+                "event": "Listing removed",
+                "price": null
+            },
+            {
+                "date": 1584568800000,
+                "event": "Listed for sale",
+                "price": null
+            },
+            {
+                "date": 1580940000000,
+                "event": "Sold",
+                "price": 2500
+            },
+            {
+                "date": 1579039200000,
+                "event": "Sold",
+                "price": 2500
+            },
+            {
+                "date": 1257631200000,
+                "event": "Listing removed",
+                "price": 239900
+            },
+            {
+                "date": 1243630800000,
+                "event": "Listed for sale",
+                "price": 239900
+            },
+            {
+                "date": 1215982800000,
+                "event": "Listing removed",
+                "price": 245900
+            },
+            {
+                "date": 1202940000000,
+                "event": "Listed for sale",
+                "price": 245900
+            },
+            {
+                "date": 875052000000,
+                "event": "Sold",
+                "price": 64500
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/5320-Glenwood-Ave-Jacksonville-FL-32205/44473448_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/6ec4c51d0798e27d75b164655257c3e2-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/47424a04288af3691da23836c3d81dff-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/decc9a78b57189618cae47778983685c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/0a94f9170174c09995bf5786c1cd66a9-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "5320 Glenwood Ave",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "size": 1784,
+            "salestatus": "",
+            "price": 179672,
+            "daysonmarket": 313
+        },
+        "description": "Newly Renovated Home in Established Family Community. Nestled in this Quiet Safe Neighborhood  is a maintenance free concrete block home loaded with too many bells and whistles to name them all... upgraded flooring , upgraded master bath, kitchen  with island, stone pavers lead to detached screened lanai with tile floors perfect for entertaining away form the main house. Freshly painted inside an outside.   ",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1963
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage",
+                "exteriormaterial": "Other, Cement / Concrete",
+                "lot": "7,492 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1446069600000,
+                "event": "Sold",
+                "price": 120000
+            },
+            {
+                "date": 1442696400000,
+                "event": "Listing removed",
+                "price": 110000
+            },
+            {
+                "date": 1435006800000,
+                "event": "Price change",
+                "price": 110000
+            },
+            {
+                "date": 1434142800000,
+                "event": "Listed for sale",
+                "price": 95900
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/2821-Post-St-Jacksonville-FL-32205/44471428_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/8406c48742e8b8d856605f2077c1cd0c-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/e88d8a4af992b0008aefe0aeb460c7c5-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d6431cc0720662724318370370a1e9c4-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e774bcf8c5d838350ebf6e0107eb7a2f-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/ca1fcda76c95007caeca254d6de80d66-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b209d77d76e1995c3a251d93d5ee52be-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/0e0e164a6039f5470a60b1ac06470b19-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e19f67b41f9648fe3ea1b4a4afc824c1-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/381ed15050318773ec66c2197b0529c0-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/de20312ff05f612622a648b34061f673-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/19a47b05498235e6edb0d72fe96d465e-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/4982967d178168543d98476911066af4-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/35d7d16aa7b12bbb9e839ac74929ae56-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/7f7da147fad1d3b1c109a1d85a190fb3-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/537ff1a3402431b29a449b32568254b3-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/1779e7b3c92319ba020a5a42fb6dbd25-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/85d9d75964f91f1645a95cc67297c063-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/eb4302e0eef6a960927bd3150dea6e8c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/221d115ec24a791e6b815af4f76a8540-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/c134b364997b23f448cf7e4bc45f61c1-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b22c1d7030bcec06711d2c02e6ea96d5-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/aff2d33dcd6f3b1e27ea8f58f553b13a-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/40a089b93ba37f3517b1f9e4543d884e-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/353154874bc543d37bb93b722e39c6f3-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e08da1ccfe3056da18940ce183a58b5d-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/385e3cf53539210cd6946755d2e1f160-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b2d27c6254380d2d6464ac2820bc78e8-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/295011610ebe95b248b42af816fa0eef-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/68b4fe82c627c863d4ad799c790c39b4-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/42c908b33270ec5645aa6152e1fcfab5-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/fb9a3965690a8bfc6f33db5e41222242-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/bb0962065b46f3b10bc092084b7229d5-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/a57ab37165f5cc09fb16deaea1f30044-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/380f5b915ec825233b711d4281b2bfbe-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/c218cb070fa5b778dfb156129e183aad-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/aa3f04878f4fb5e46e1a9392354c63dc-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/0aeb918e305f61887f1a074e3923d64e-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/6ca38e9819fd4c506562f21d3a4031e5-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "2821 Post St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "size": 1320,
+            "salestatus": "",
+            "price": 261509,
+            "daysonmarket": 371
+        },
+        "description": "Charming 3BR/1BA bungalow home in historic Riverside.  Original refinished hardwood floors throughout, crown molding, wood burning fireplace, and finishnig touches that gives this home so much character.  Detached garage in backyard and a secret garden with a pond and additional patio space that can be used for entertaining.  Great location and within walking distance to restaurants and shopping.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1920
+            },
+            "interiordetails": {
+                "heating": "None, Other",
+                "cooling": "Central",
+                "appliances": [
+                    "Dishwasher",
+                    "Range / Oven"
+                ],
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage, Garage - Detached",
+                "exteriormaterial": "Vinyl",
+                "lot": "6,124 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1441141200000,
+                "event": "Sold",
+                "price": 125000
+            },
+            {
+                "date": 1438117200000,
+                "event": "Listed for sale",
+                "price": 131000
+            },
+            {
+                "date": 1435352400000,
+                "event": "Listing removed",
+                "price": 131000
+            },
+            {
+                "date": 1435352400000,
+                "event": "Pending sale",
+                "price": 131000
+            },
+            {
+                "date": 1433192400000,
+                "event": "Listed for sale",
+                "price": 131000
+            },
+            {
+                "date": 1347051600000,
+                "event": "Listing removed",
+                "price": 1200
+            },
+            {
+                "date": 1345064400000,
+                "event": "Listed for rent",
+                "price": 1200
+            },
+            {
+                "date": 1223848800000,
+                "event": "Sold",
+                "price": 130000
+            },
+            {
+                "date": 962917200000,
+                "event": "Sold",
+                "price": 64000
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/1087-Dancy-St-Jacksonville-FL-32205/44469149_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=1087+Dancy+St%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=ugjCgFBb3A7rOlNxDqRWP0WD-Lc="
+        ],
+        "address": {
+            "street": "1087 Dancy St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "size": 1439,
+            "salestatus": "",
+            "price": 204689,
+            "daysonmarket": 379
+        },
+        "description": "Investor and homebuyer opportunity! This property is being offered at a live auction on 12-02-2019. Buy it as an investment or enjoy it as your own home. Visit Auction.com to find out where and when the auction will take place. Also, view additional photos, sales comps, rental data, title info, neighborhood reports and more. Auction.com is the nation's leading online real estate marketplace offering over 30,000 discounted residential bank-owned and foreclosure deals. Don't miss the opportunity to buy homes that offer the potential for a high return on investment. In addition to this property, Auction.com has 369 scheduled for sale at this same auction. Altogether, Auction.com has 80 properties scheduled for sale in Duval County and 1139 throughout Florida. All properties and sale details can be found with a simple search at Auction.com. Create a free account to find similar properties, save your favorites and receive email alerts of upcoming auctions. To view the complete details of this property, click the \"Get Auction Details\" button above or paste the Property ID 2868470 into the search bar at Auction.com.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1927
+            },
+            "interiordetails": {
+                "heating": "Forced air, Oil",
+                "cooling": "Wall",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage - Detached",
+                "exteriormaterial": "Other",
+                "lot": "7,840 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1575324000000,
+                "event": "Listing removed",
+                "price": 172588
+            },
+            {
+                "date": 1575237600000,
+                "event": "Price change",
+                "price": 172588
+            },
+            {
+                "date": 1575151200000,
+                "event": "Price change",
+                "price": 172758
+            },
+            {
+                "date": 1574978400000,
+                "event": "Price change",
+                "price": 172637
+            },
+            {
+                "date": 1574805600000,
+                "event": "Price change",
+                "price": 172503
+            },
+            {
+                "date": 1574632800000,
+                "event": "Price change",
+                "price": 172076
+            },
+            {
+                "date": 1574200800000,
+                "event": "Price change",
+                "price": 172498
+            },
+            {
+                "date": 1574028000000,
+                "event": "Price change",
+                "price": 173071
+            },
+            {
+                "date": 1573941600000,
+                "event": "Price change",
+                "price": 173060
+            },
+            {
+                "date": 1573768800000,
+                "event": "Price change",
+                "price": 177574
+            },
+            {
+                "date": 1573596000000,
+                "event": "Listed for sale",
+                "price": null
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/5266-Carder-St-Jacksonville-FL-32205/44474042_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=5266+Carder+St%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=5s96Moev-x6xjAcDMSLkSEHsKew="
+        ],
+        "address": {
+            "street": "5266 Carder St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "size": 1210,
+            "salestatus": "",
+            "price": 149946,
+            "daysonmarket": 377
+        },
+        "description": "This 1210 square foot single family home has 3 bedrooms and 1.0 bathrooms. This home is located at 5266 Carder St, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1954
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Wall",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage",
+                "exteriormaterial": "Brick",
+                "lot": "0.27 Acres"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1012946400000,
+                "event": "Sold",
+                "price": 100
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/6742-Grace-Ln-Jacksonville-FL-32205/44415275_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=6742+Grace+Ln%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=rr8Oi6ZxH8bqX4Un2O5hsFniGy0="
+        ],
+        "address": {
+            "street": "6742 Grace Ln",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "size": 1756,
+            "salestatus": "",
+            "price": 186387,
+            "daysonmarket": 401
+        },
+        "description": "This 1756 square foot single family home has 3 bedrooms and 2.0 bathrooms. This home is located at 6742 Grace Ln, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1983
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage",
+                "exteriormaterial": "Brick",
+                "lot": "0.33 Acres"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 991602000000,
+                "event": "Sold",
+                "price": 114900
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/4515-Sappho-Ave-Jacksonville-FL-32205/44469669_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=4515+Sappho+Ave%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=Y6evNdLk1gsDnaNuuazfQ33TiO0="
+        ],
+        "address": {
+            "street": "4515 Sappho Ave",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "size": 1282,
+            "salestatus": "",
+            "price": 209582,
+            "daysonmarket": 384
+        },
+        "description": "This 1282 square foot single family home has 3 bedrooms and 1.0 bathrooms. This home is located at 4515 Sappho Ave, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1945
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage, Garage - Attached",
+                "exteriormaterial": "Brick",
+                "lot": "5,749 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 489013200000,
+                "event": "Sold",
+                "price": 40000
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/2767-College-St-Jacksonville-FL-32205/44471411_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=2767+College+St%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=mpDo9BLYfe3wuyl9pnG6kdpqf1I="
+        ],
+        "address": {
+            "street": "2767 College St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "size": 1296,
+            "salestatus": "",
+            "price": 258507,
+            "daysonmarket": 377
+        },
+        "description": "This 1296 square foot single family home has 2 bedrooms and 1.0 bathrooms. This home is located at 2767 College St, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1912
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "None",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage, Garage - Attached",
+                "exteriormaterial": "Other",
+                "lot": "6,142 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 536364000000,
+                "event": "Sold",
+                "price": 29100
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/6136-Trish-Ct-Jacksonville-FL-32205/44473569_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?size=960x720&location=30.297475814819336,-81.74755859375&key=AIzaSyBJsNQO5ZeG-XAbqqWLKwG08fWITSxg33w&&signature=ygJ2_mdLIG-21bNTRR6SKB7jAXU="
+        ],
+        "address": {
+            "street": "6136 Trish Ct",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "size": 995,
+            "salestatus": "",
+            "price": 128566,
+            "daysonmarket": 412
+        },
+        "description": "This 995 square foot single family home has 3 bedrooms and 2.0 bathrooms. This home is located at 6136 Trish Ct, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 2002
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage",
+                "exteriormaterial": "Other",
+                "lot": "7,792 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1023656400000,
+                "event": "Sold",
+                "price": 77300
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/3639-Dellwood-Ave-Jacksonville-FL-32205/44468311_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=3639+Dellwood+Ave%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=wf3Ws6mimPwSo6VoOoS5wmXQBos="
+        ],
+        "address": {
+            "street": "3639 Dellwood Ave",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "size": 1044,
+            "salestatus": "",
+            "price": 156710,
+            "daysonmarket": 231
+        },
+        "description": "This 1044 square foot single family home has 2 bedrooms and 1.0 bathrooms. This home is located at 3639 Dellwood Ave, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1940
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage - Detached",
+                "exteriormaterial": "Other",
+                "lot": "5,034 sqft"
+            }
+        }
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/5205-Kingsbury-St-Jacksonville-FL-32205/44467879_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=5205+Kingsbury+St%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=nl7zPNNMRtYmd_HZgnNhw6--7_8="
+        ],
+        "address": {
+            "street": "5205 Kingsbury St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "size": 1082,
+            "salestatus": "",
+            "price": 106896,
+            "daysonmarket": 259
+        },
+        "description": "This 1082 square foot single family home has 3 bedrooms and 1.0 bathrooms. This home is located at 5205 Kingsbury St, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1946
+            },
+            "interiordetails": {
+                "heating": "Electric",
+                "cooling": "Wall",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage",
+                "exteriormaterial": "Other, Stucco",
+                "lot": "8,450 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1193176800000,
+                "event": "Sold",
+                "price": 85200
+            },
+            {
+                "date": 1164578400000,
+                "event": "Sold",
+                "price": 34400
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/949-Wolfe-St-Jacksonville-FL-32205/44469304_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=949+Wolfe+St%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=MgzweSxqrKUJlLwtsXXeJQOn-s0="
+        ],
+        "address": {
+            "street": "949 Wolfe St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "size": 1134,
+            "salestatus": "",
+            "price": 188530,
+            "daysonmarket": 296
+        },
+        "description": "This 1134 square foot single family home has 2 bedrooms and 1.0 bathrooms. This home is located at 949 Wolfe St, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1927
+            },
+            "interiordetails": {
+                "heating": "Forced air, Gas",
+                "cooling": "Central",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage, Garage - Attached",
+                "exteriormaterial": "Other",
+                "lot": "7,831 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1032210000000,
+                "event": "Sold",
+                "price": 91000
+            },
+            {
+                "date": 961016400000,
+                "event": "Sold",
+                "price": 35000
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/4011-Dellwood-Ave-Jacksonville-FL-32205/44468297_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/5dc818bebcb255e9b226b27638cf8597-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/d5b9b0b57be1cf1b07f4d7bea1440d8b-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/700c276e52d6a671ed5428b0dc7d0e23-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/02c46d861a9906ce64b9677f085d368c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/1c946ff2982bbe1acf3b5864696d5424-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/87abf3d8f6b6723c9a87e7d79383f841-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/196c6e8a77383ce8e3a7f6e861216ef6-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/4d5016bd57bfa04eab7e57fcc4601eb2-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/dbe32716953fdcf1d55f94c17a2ff382-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/ace23d356a0916bf9ee78b73c05948d8-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b8dbeebba66b1a6088dad3a2bb17316c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/5a528b2ce879ef93be5b58a6c1e15483-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "4011 Dellwood Ave",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "size": 1358,
+            "salestatus": "",
+            "price": 191714,
+            "daysonmarket": 224
+        },
+        "description": "BACK ON MARKET!!! MURRAY HILL  - LOCATION LOCATION LOCATION! Charming 3/2 home with classic front porch renovated with NEW ROOF in 2013. Hardwood floors,  crown molding,   fully equipped kitchen and baths featuring granite counters & travertine tile floors.  Indoor laundry and lots of closet space! Exceptional Murray Hill district location, close to downtown, NAS Jax, I-10 and the historic Riverside and Avondale area's entertainment, food and shops.  Priced to move quickly!",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1938,
+                "sewer": "Public Sewer",
+                "watersource": "Public"
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "exteriormaterial": "Other",
+                "lot": "5,063 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1560373200000,
+                "event": "Listing removed",
+                "price": 159900
+            },
+            {
+                "date": 1559682000000,
+                "event": "Back on market",
+                "price": 159900
+            },
+            {
+                "date": 1556226000000,
+                "event": "Pending sale",
+                "price": 159900
+            },
+            {
+                "date": 1555362000000,
+                "event": "Listed for sale",
+                "price": 159900
+            },
+            {
+                "date": 1387404000000,
+                "event": "Sold",
+                "price": 100000
+            },
+            {
+                "date": 1309899600000,
+                "event": "Sold",
+                "price": 33600
+            },
+            {
+                "date": 1299276000000,
+                "event": "Listed for sale",
+                "price": 33000
+            },
+            {
+                "date": 1273093200000,
+                "event": "Sold",
+                "price": null
+            },
+            {
+                "date": 1271970000000,
+                "event": "Sold",
+                "price": null
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/4625-Polaris-St-Jacksonville-FL-32205/44469756_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/6e9146a574a1bf0f0760211cd95ea86d-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/e95c862d96f25c724b43ca9b4770fbcd-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/756b06763108c1aebdfdb7c4cf98f588-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/acbfad86840959fbeb6c47c641a7826c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/9ae381ec34c551d14fcb9154b097ac85-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/1cc02db00000dc7a61164774d4e1bb1e-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b3f5672bba269e91cdf14513af9a9a28-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/fa4beb1af2c7c36f9f00f4b9bbd448bf-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/38d45cfa36c71c881f24f1a4e07151d9-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/17fc151927fd15ade2f8fc60bb151593-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/bd27dd6bc4f96f8efc9ae9c57359e42e-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/c188377aa9bd856656fc34c6fa6014a8-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/386884b425f526a5b2c696841b21a224-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b6117da05105e58eac4f53dff06d845c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d4348cb85f751ef22813021530babfa9-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/3e69a610020cd99b5477cbedb9aa0ef9-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/4cdb36525f8477275bc09a59705c1e90-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/42f194b64dbcaa833e93e83992c5e4f5-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/5b95bc8dd96b5d66ed8b49946a8cd647-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/7344953e5e3d8c18b395bdd015d39a97-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e81137b24ffcf0938e0470480d1817a3-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/074eae56bf65255cefae2768740d7085-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b89738da5245233a5ceedc34ee34a93b-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/69376e1256ccafbf5679a50eeab8aa11-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/ee023de8cd96ef42aeb4ace78d50a107-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/3b060e9a90ce67267bde24c22f78ee15-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/a799f732f89873464be15fbc852211d5-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/edfa48c09083ee2364ddc4470a4f8fa7-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "4625 Polaris St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "size": 1645,
+            "salestatus": "",
+            "price": 245924,
+            "daysonmarket": 83
+        },
+        "description": "Great location!  Walk/bike to schools, shops, Parks! One of a Kind 1928 home.  Completely updated. Roof, electrical, A/C, Plumbing, Kitchen, Baths, Detached garage with workspace. This home has Patios, Porches, Decks the perfect home for entertaining.  Don't miss the 3rd floor. (Secret entrance in 3rd bedroom closet) Completely heated and cooled.  Perfect office, playroom, studio!  This is the first time this house has had central heat and air and sq ft for 3rd floor not included in tax role. ",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1928
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "appliances": [
+                    "Dishwasher",
+                    "Dryer",
+                    "Freezer",
+                    "Garbage disposal",
+                    "Microwave",
+                    "Range / Oven",
+                    "Refrigerator",
+                    "Washer"
+                ],
+                "stories": 2
+            },
+            "exteriordetails": {
+                "parking": "Garage - Detached, Off-street, Covered",
+                "exteriormaterial": "Stucco, Brick",
+                "roofmaterial": "Shingle Roof",
+                "lot": "5,031 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1492462800000,
+                "event": "Sold",
+                "price": 195000
+            },
+            {
+                "date": 1489701600000,
+                "event": "Pending sale",
+                "price": 220000
+            },
+            {
+                "date": 1489701600000,
+                "event": "Price change",
+                "price": 219000
+            },
+            {
+                "date": 1487800800000,
+                "event": "Pending sale",
+                "price": 220000
+            },
+            {
+                "date": 1487282400000,
+                "event": "Back on market",
+                "price": 220000
+            },
+            {
+                "date": 1487109600000,
+                "event": "Pending sale",
+                "price": 220000
+            },
+            {
+                "date": 1485468000000,
+                "event": "Price change",
+                "price": 220000
+            },
+            {
+                "date": 1485295200000,
+                "event": "Price change",
+                "price": 219000
+            },
+            {
+                "date": 1484690400000,
+                "event": "Price change",
+                "price": 220000
+            },
+            {
+                "date": 1484085600000,
+                "event": "Back on market",
+                "price": 225000
+            },
+            {
+                "date": 1483999200000,
+                "event": "Pending sale",
+                "price": 225000
+            },
+            {
+                "date": 1483999200000,
+                "event": "Back on market",
+                "price": 225000
+            },
+            {
+                "date": 1482098400000,
+                "event": "Pending sale",
+                "price": 225000
+            },
+            {
+                "date": 1482098400000,
+                "event": "Back on market",
+                "price": 225000
+            },
+            {
+                "date": 1482098400000,
+                "event": "Pending sale",
+                "price": 225000
+            },
+            {
+                "date": 1481839200000,
+                "event": "Listed for sale",
+                "price": 225000
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/1262-Murray-Dr-Jacksonville-FL-32205/44472752_zpid/",
+        "images": [
+            "https://maps.googleapis.com/maps/api/streetview?location=1262+Murray+Dr%2C+Jacksonville%2C+FL+32205&size=960x720&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=PtuZKxVGm4chPcojNKZuv7f1TOQ="
+        ],
+        "address": {
+            "street": "1262 Murray Dr",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "size": 1286,
+            "salestatus": "",
+            "price": 183281,
+            "daysonmarket": 258
+        },
+        "description": "This 1286 square foot single family home has 3 bedrooms and 1.0 bathrooms. This home is located at 1262 Murray Dr, Jacksonville, FL 32205.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1938
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage",
+                "exteriormaterial": "Composition",
+                "lot": "0.26 Acres"
+            }
+        }
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/1166-Murray-Dr-Jacksonville-FL-32205/44472464_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/7fc4666c770a5a15bb4f4fcabfee0ba7-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/9b7941f3f86f2042d92f8dba8783df9c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/21736e7f829f9979a6fd692c6ce9f7c9-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b55a2547af5d5a0bd7a23812405aa3cb-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/535d9f1ea1ce129db20f0cfb3cffcf34-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d430f7ff2e951eba5267d7aea5253071-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/2c330be0ba49f630c7c683a75c83081e-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/34d724f62455aebc86d9d61d214c55a6-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d55de53c596444f117af0158ef529cb9-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/20133a9eba4e7968e3f7bb137765e1b3-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/a0fcc9c9474e607944f032d7b9a7cad8-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e03aa0476ac864f71cbe89998dda3390-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/f38ec9dedab682dc8fbc534cc7c244aa-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/8606fc051f542e5cee76f84907d704d6-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "1166 Murray Dr",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "size": 866,
+            "salestatus": "",
+            "price": 115000,
+            "daysonmarket": 5
+        },
+        "description": "Sweet little Murray Hill bungalow ready for someone to come give it some love! This home has been a rental property for some years, so it's got great bones but is in need of some TLC. It's the perfect opportunity for someone to come flip or just fix it up and live in. Great neighborhood in Murray Hill, which has been enjoying above average appreciation for several years. Great house at a great price ready for it's new owner! Home is being sold AS-IS. Seller to make no repairs.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1943,
+                "sewer": "Public Sewer",
+                "watersource": "Public"
+            },
+            "interiordetails": {
+                "heating": "Forced air, Gas",
+                "cooling": "Central",
+                "appliances": [
+                    "Range / Oven",
+                    "Refrigerator"
+                ],
+                "stories": 1,
+                "extra": [
+                    "Ceiling Fan(s)",
+                    "Separate Dining Room"
+                ]
+            },
+            "exteriordetails": {
+                "parking": "Garage - Detached, Covered",
+                "exteriormaterial": "Wood",
+                "roofmaterial": "Shingle",
+                "lot": "4,995 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1604268000000,
+                "event": "Pending sale",
+                "price": 115000
+            },
+            {
+                "date": 1604008800000,
+                "event": "Listed for sale",
+                "price": 115000
+            },
+            {
+                "date": 1502312400000,
+                "event": "Listing removed",
+                "price": 875
+            },
+            {
+                "date": 1501448400000,
+                "event": "Price change",
+                "price": 875
+            },
+            {
+                "date": 1499720400000,
+                "event": "Listed for rent",
+                "price": 900
+            },
+            {
+                "date": 1477864800000,
+                "event": "Listing removed",
+                "price": 825
+            },
+            {
+                "date": 1424124000000,
+                "event": "Listing removed",
+                "price": 775
+            },
+            {
+                "date": 1423605600000,
+                "event": "Listed for rent",
+                "price": 775
+            },
+            {
+                "date": 1335128400000,
+                "event": "Listing removed",
+                "price": 725
+            },
+            {
+                "date": 1333659600000,
+                "event": "Price change",
+                "price": 725
+            },
+            {
+                "date": 1331762400000,
+                "event": "Price change",
+                "price": 750
+            },
+            {
+                "date": 1330984800000,
+                "event": "Listed for rent",
+                "price": 775
+            },
+            {
+                "date": 1147640400000,
+                "event": "Sold",
+                "price": 119900
+            },
+            {
+                "date": 932504400000,
+                "event": "Sold",
+                "price": 294
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/3528-Plum-St-Jacksonville-FL-32205/44468914_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/be139ea5fb35b3b4637ec6e8e091e579-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/b0cd85a74be8d22349a299c7ab952ae2-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/c0c97362a09fa2e167cd79039a7bbe88-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d06a5517bacd8890e65138c77b96f8f4-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/55b3faaca724a2b08c8defadf9c17990-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/4c62a980202355315ce9fa451db4af98-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/aeb90914db0c5a2b594b22df0bc63c59-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "3528 Plum St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "size": 907,
+            "salestatus": "",
+            "price": 200000,
+            "daysonmarket": 24
+        },
+        "description": "Murray Hill area. CHARMING HOME OFFERING A FUNCTIONAL AND Nice LAYOUT, newer roof, NEWER HVAC  AND A NICE LOT. 2 Car Garage, OFFERS EASY ACCESS TO Downtown, I-95, I-10 & ROOSEVELT BLVD. ",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1948
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "appliances": [
+                    "Dryer",
+                    "Range / Oven",
+                    "Refrigerator",
+                    "Washer"
+                ],
+                "stories": 1
+            },
+            "exteriordetails": {
+                "parking": "Garage - Detached, Covered",
+                "exteriormaterial": "Other",
+                "lot": "6,480 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1603054800000,
+                "event": "Price change",
+                "price": 200000
+            },
+            {
+                "date": 1602363600000,
+                "event": "Listed for sale",
+                "price": 250000
+            },
+            {
+                "date": 1299708000000,
+                "event": "Sold",
+                "price": 16100
+            },
+            {
+                "date": 1296338400000,
+                "event": "Price change",
+                "price": 15300
+            },
+            {
+                "date": 1292018400000,
+                "event": "Listed for sale",
+                "price": 17000
+            },
+            {
+                "date": 1275858000000,
+                "event": "Sold",
+                "price": null
+            },
+            {
+                "date": 781394400000,
+                "event": "Sold",
+                "price": 38200
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/5320-Yerkes-St-Jacksonville-FL-32205/44473782_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/8bc648f890de9dd51398b92095f986b2-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/c123eb88d9b5fe65fc2306b854858393-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/aa04c330343e51781c9519f5f3df29c1-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/66130f3387300096a3e53d0405f41de5-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/ac4253eaed775bff3611543a14bbf39c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/5d05d9c0a069a1e2e54085176457dbef-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/f8a828c9b3c92f5a51a1f428a79a98f1-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/2cec0a03442cd114abc04a709997e928-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e4164330a922a4de61d916b11bd9b09f-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/fd398d1885031615e1501f264a1999d6-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/76cffd721d65f73851fa2d8366a8bb7d-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/08dea3be8ac9ae61da30028b302bed8c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/7ce73bc32e93ac6250d067c093037cef-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/dbcff62c64ae4f9c7b1ee3b691afacb6-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b192b4888b79c28e49e7c90aaf3f2827-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e9971ac4b4a6781ae1810cd89bc0995c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/094b12768870f67c444e927a7e94a3f8-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e5c5123832d0fcbd93fd55c1010e0681-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/1b59853edbccc1f191c0c183e16066f2-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/732b3a7e479638bf65ff8cc2df62f680-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/9d45053b3d3d8e71b0304cbfa4abf3b6-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/49dedc4d21e35015bb39f3d4453557d3-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/5ba4798141a3b25c416516482cc25625-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/93e061e91c9cba1ef90147a8a3f49865-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/5afb985818d8926e58813a3d82046fa1-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d14aed28696179a5602dcb4bb3766235-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/c4a0bc6332f21982694e86908df3ee3f-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/bbe17f8a4bbfb34ffefde3e0724fa68c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e9e0dd808278feed3fffb95bf9601175-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/f5dfc3c938e674d2b683706d053b7781-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/bc93a2bd70a538b615efb752cf0a65ff-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "5320 Yerkes St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 4,
+            "bathrooms": 2,
+            "size": 1604,
+            "salestatus": "",
+            "price": 214900,
+            "daysonmarket": 41
+        },
+        "description": "Reduced and price to sell quick. Well designed split bedroom floor plan with 4 bedrooms and 2 baths.  Huge back yard with plenty of room for kids and entertaining. Has a living room and a family room with real wood fireplace.  Updated Kitchen. Single car garage with a 6 car driveway.  MUST SEE!  Won't last long.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1951,
+                "sewer": "Public Sewer",
+                "watersource": "Public"
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "appliances": [
+                    "Dishwasher",
+                    "Microwave",
+                    "Range / Oven"
+                ],
+                "stories": 1,
+                "extra": [
+                    "Breakfast Bar",
+                    "Walk-In Closet(s)",
+                    "Separate Dining Room",
+                    "Family Room",
+                    "Eating Space-Kitchen"
+                ]
+            },
+            "exteriordetails": {
+                "parking": "Garage, Covered",
+                "exteriormaterial": "Vinyl, Wood",
+                "roofmaterial": "Shingle",
+                "lot": "9,147 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1604008800000,
+                "event": "Price change",
+                "price": 214900
+            },
+            {
+                "date": 1600894800000,
+                "event": "Listed for sale",
+                "price": 224900
+            },
+            {
+                "date": 1479074400000,
+                "event": "Sold",
+                "price": 110000
+            },
+            {
+                "date": 1466110800000,
+                "event": "Sold",
+                "price": 55100
+            },
+            {
+                "date": 881272800000,
+                "event": "Sold",
+                "price": 56000
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/3515-Cypress-St-Jacksonville-FL-32205/44468937_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/2e7a765d03b1242d7ae3bb21f100099e-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/efdbd678c6708be8bc3d6b02563af8b2-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b13e8022a24e66ef845b72e0ec0e015d-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/049ff038bc02b018d96c9e93f5f27078-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/90432c136b04e452a00e8a5a1e7d7f8c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/5cd2072caac8f9655ae07a3eb84da838-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/cc130639116b8244d72b447c913b7b70-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/9ceb5bcb7c65a5e4d5c82b581f87bf1b-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/751eac980d72bafa98ef2c5feda0eeb5-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d7266f4e84ec9c9ce98445ea94aeb92f-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/984eadbf2f3efa0ab76a6a4b6f4f09eb-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/4fa0a384fc87f26d468600dc7cedcd42-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/8b1923f0f9cfc6c7df703a13c739f8b3-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/4745e216294eccc7c0c58b9c14367c26-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/8f4e0405f11a7f24acffdaeb3e54380d-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/2255e0f72845a62e44c675b4429cbdeb-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/2cddc5c7121d595f7867a5c69faf43b9-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/08a4f58b75e862cf4eac43486e7f1c0f-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/45882609498f0ab878941881f6521251-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/c42e1f8c445f62a413c8a88fa46c4293-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/dfe8ea4035367a8f7ef0d4623ea10bdf-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e3f86137800885444416d0de8c08cd62-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/fc5b419bcdba2792f3f6c35d59c5d5d9-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/a4551e749cb1c376187056bb90686807-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e0fddc9bbb9fed2328826991666ae163-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "3515 Cypress St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "size": 1210,
+            "salestatus": "",
+            "price": 187000,
+            "daysonmarket": 20
+        },
+        "description": "Charm, character, and UPGRADES! Right in the heart of Murray Hill, the perfect bungalow sits just blocks away from shops, restaurants, nightlight, and more! The entire home, both exterior and interior, has been freshly painted!  The interior boasts original hardwood flooring, just freshly refinished, and floods of natural light that pours through the floor plan. 10 feet ceilings and large living room is perfect for entertaining or relaxing with the whole family. BRAND new tile in kitchen and BRAND new quartz countertop! Just installed! The bathroom also features BRAND new tile flooring and gives a modern feel from white subway tile in the shower. All rooms are spacious and the owner's suite has a wood burning fireplace for chilly Florida nights.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1914,
+                "sewer": "Public Sewer",
+                "watersource": "Public"
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "appliances": [
+                    "Dishwasher",
+                    "Dryer",
+                    "Microwave",
+                    "Range / Oven",
+                    "Washer"
+                ],
+                "stories": 1,
+                "extra": [
+                    "Ceiling Fan(s)",
+                    "Entrance Foyer",
+                    "Family Room",
+                    "Ceiling 8+ Ft.",
+                    "Eating Space-Kitchen",
+                    "Pantry - Closet"
+                ]
+            },
+            "exteriordetails": {
+                "parking": "Garage, Off-street",
+                "exteriormaterial": "Stucco, Wood",
+                "roofmaterial": "Shingle",
+                "lot": "8 Acres"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1603486800000,
+                "event": "Pending sale",
+                "price": 187000
+            },
+            {
+                "date": 1602709200000,
+                "event": "Listed for sale",
+                "price": 187000
+            },
+            {
+                "date": 1564002000000,
+                "event": "Listing removed",
+                "price": 1150
+            },
+            {
+                "date": 1560978000000,
+                "event": "Listed for rent",
+                "price": 1150
+            },
+            {
+                "date": 1528923600000,
+                "event": "Listing removed",
+                "price": 1150
+            },
+            {
+                "date": 1525381200000,
+                "event": "Listed for rent",
+                "price": 1150
+            },
+            {
+                "date": 1483653600000,
+                "event": "Listing removed",
+                "price": 1050
+            },
+            {
+                "date": 1449871200000,
+                "event": "Listing removed",
+                "price": 900
+            },
+            {
+                "date": 1446588000000,
+                "event": "Price change",
+                "price": 900
+            },
+            {
+                "date": 1443474000000,
+                "event": "Price change",
+                "price": 1100
+            },
+            {
+                "date": 1442264400000,
+                "event": "Price change",
+                "price": 1200
+            },
+            {
+                "date": 1440622800000,
+                "event": "Listed for rent",
+                "price": 1195
+            },
+            {
+                "date": 1155675600000,
+                "event": "Sold",
+                "price": 152900
+            },
+            {
+                "date": 994885200000,
+                "event": "Sold",
+                "price": 58400
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/4743-French-St-Jacksonville-FL-32205/44470143_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/28a8f7c2ce494f28dc15287699f53d1d-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/5a967f3bb98be5b574623d8955acdd17-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/c9df50787d8da986c160d6a504622809-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d7a1a6efa341d630142acdf67380f9c9-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/94126b72368701ec42df6d81b1007f54-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/c0a74e4d6bcc520846a3b9a5fb3fb058-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/5343c22343bb2c6135148f8752cd558f-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e8f8f59c88c164783a4a404cd738bbdf-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/bf23d5f667c94329cce36893e4c8eb69-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/52a59ac24ae87ffe58f20aa18828895c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/f2fb5221121a6fffb592d3ca206ee541-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/3d2d8ee5b7e82c6fec69b3d3542e5398-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/1f0602ad23a0ca56401b87d0001762af-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/17e2daf8c1df3436d23bdbb7dcdc29ee-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/8e56dfaa8235f5048941f80b6b0a4fb3-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/91c031c843d45ba9da84fe8c609e38ca-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/84945981a361805b76d80cc1d1b678d4-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d9b7cea7221e0b5501f31e69c0b956cd-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/cd35080e79cb4bc0372ca7b83c06c1df-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/88a0f2dbe02d960d68d224ae33422d59-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/217ab25ad1776fd7ef0bb1c4f51f1647-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "4743 French St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "size": 1280,
+            "salestatus": "",
+            "price": 219900,
+            "daysonmarket": 29
+        },
+        "description": "Charming bungalow in desirable sought after neighborhood of Murray Hill, minutes from Avondale and Five Points shopping and restaurants and a quick trip to Downtown Jax, JIA, and NAS Jax.  This 3 bedroom 1 Bath home is MOVE IN READY!  It boasts a formal sitting area, family room with wood burning brick fireplace and a separate dining room! New Luxury Vinyl Plank flooring, tile floors, fresh paint everywhere. Upgraded kitchen with stainless steel appliances.  Upgraded light fixtures.  Detached garage large enough to park in. Nice fenced in private backyard, perfect for entertaining. You don't want to miss this opportunity.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1940,
+                "sewer": "Public Sewer",
+                "watersource": "Public"
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "appliances": [
+                    "Dishwasher",
+                    "Garbage disposal",
+                    "Microwave",
+                    "Range / Oven",
+                    "Refrigerator"
+                ],
+                "stories": 1,
+                "extra": [
+                    "Separate Dining Room",
+                    "Family Room",
+                    "Ceiling 8+ Ft.",
+                    "Separate Living Room",
+                    "Eating Space-Kitchen",
+                    "Pantry - Closet"
+                ]
+            },
+            "exteriordetails": {
+                "parking": "Garage - Detached, Covered",
+                "exteriormaterial": "Other",
+                "roofmaterial": "Shingle",
+                "lot": "5,226 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1603663200000,
+                "event": "Price change",
+                "price": 219900
+            },
+            {
+                "date": 1601931600000,
+                "event": "Listed for sale",
+                "price": 224900
+            },
+            {
+                "date": 1341781200000,
+                "event": "Sold",
+                "price": 51500
+            },
+            {
+                "date": 1333746000000,
+                "event": "Listing removed",
+                "price": 51500
+            },
+            {
+                "date": 1331157600000,
+                "event": "Price change",
+                "price": 51500
+            },
+            {
+                "date": 1331071200000,
+                "event": "Listed for sale",
+                "price": null
+            },
+            {
+                "date": 1328220000000,
+                "event": "Sold",
+                "price": 37600
+            },
+            {
+                "date": 1118955600000,
+                "event": "Sold",
+                "price": 100300
+            },
+            {
+                "date": 974239200000,
+                "event": "Sold",
+                "price": 65000
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/5714-Akra-Ave-Jacksonville-FL-32205/44468102_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/83d7eaf8217985f6eb86f5276fe0fff9-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/f1dcaf8da38315d48ea2be052232afd0-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e43842580c57c728e965ca900d156029-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/2e69be068582fd3c59ba172ac7b0f751-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/3f030389bfe740350a772bbaf8d3bbf0-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/326aee6ae3f233ba79a21046cc4afa96-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/8ad007c5a3e8b8c3c6defe814246866d-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/4162b10128be9bc690d480471b6c1406-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/a493e0caf839ee3e3ffcdcac108a4e6e-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d94c44792a21ba694bb7a06114df90cd-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/55bf63ad7e3b8a1c9988a21441968fc2-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/5054fe8907716ab0ad36ee6481f32bd4-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/0fcef9691cf390a1097be18304d124af-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d273c475c78123a64003109564564b29-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/32d38671436c74a56e3daadaa257c271-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/9886ca2200fa8abaf8293de3882b91ec-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/4f3ce0891a57bbb90487da78452dd255-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/54434c97ea3f313fbc5558240aa4f754-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/831a0c8bee768e7203f4e7dc5749d4b6-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/3fee1046c937088967df1fb76562e14d-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "5714 Akra Ave",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "size": 1227,
+            "salestatus": "",
+            "price": 139000,
+            "daysonmarket": 82
+        },
+        "description": "Charming house with 3 bedrooms and 2 bathroom with 1 carport . Propert includes new roof in 2020 , updated floors , new bathroom and freshly painted.  This property has plenty of space to park boats, trucks and RV.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1953,
+                "watersource": "Public, Private"
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "appliances": [
+                    "Range / Oven",
+                    "Refrigerator"
+                ],
+                "stories": 1,
+                "extra": [
+                    "Separate Dining Room"
+                ]
+            },
+            "exteriordetails": {
+                "parking": "Carport, Off-street",
+                "exteriormaterial": "Cement / Concrete",
+                "roofmaterial": "Shingle",
+                "lot": "0.25 Acres"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1599512400000,
+                "event": "Price change",
+                "price": 139000
+            },
+            {
+                "date": 1597957200000,
+                "event": "Price change",
+                "price": 150000
+            },
+            {
+                "date": 1597352400000,
+                "event": "Listed for sale",
+                "price": 170000
+            },
+            {
+                "date": 1585000800000,
+                "event": "Sold",
+                "price": 2450000
+            },
+            {
+                "date": 1560200400000,
+                "event": "Listing removed",
+                "price": 1175
+            },
+            {
+                "date": 1560114000000,
+                "event": "Price change",
+                "price": 1175
+            },
+            {
+                "date": 1555016400000,
+                "event": "Listed for rent",
+                "price": 1095
+            },
+            {
+                "date": 1521496800000,
+                "event": "Listing removed",
+                "price": 975
+            },
+            {
+                "date": 1521496800000,
+                "event": "Price change",
+                "price": 975
+            },
+            {
+                "date": 1520460000000,
+                "event": "Price change",
+                "price": 1095
+            },
+            {
+                "date": 1519164000000,
+                "event": "Price change",
+                "price": 1000
+            },
+            {
+                "date": 1513548000000,
+                "event": "Price change",
+                "price": 1095
+            },
+            {
+                "date": 1511128800000,
+                "event": "Listed for rent",
+                "price": 1195
+            },
+            {
+                "date": 1433106000000,
+                "event": "Sold",
+                "price": 1400000
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/5125-Clarendon-Rd-Jacksonville-FL-32205/44473825_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/3dd34c13f5d5c4170e44fcc0d0863014-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/6dc41935f304f0eb61a75c9599823f62-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/3fe1e9e61bc8b7d614e11e53c382769c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/af04c02fd6bd45ff24e51a14f10cb82c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/c36f0e10a1d6aaab9534d86ae1b7abdb-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/2c49ecff1cfefa8dcbbf422dab366ff8-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/f86f1f6aeb047ac817437df12803b46d-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/997e377fe8c23ce5b6ebda3915b83f82-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/ac2822d3bb08f39171e65690bb37ea4e-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/a13f88c1b1af2aaa14a0225bb87208f1-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/af2c1284a44d5fd3fa8800708f4890b2-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/2517560756bbf1ff2e8049d89a35dbeb-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/a0d6e9f0feb50db78b1391e49bd8db31-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/2dc54e38cc21851903b237c09f0a4217-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/ea6b79621cc1536e1dd5891f18620d0b-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/0a3e4e7674a2c4139ec8982702354d03-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/9914183b6609065adb5d23dcb01dc7ba-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/52595247ab3cba6099e60a41110ad12e-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/0bc47669c91a28982b6ed1997118e63f-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d8b2a4f6e249b741db5c1bbf19376d6e-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/1bf155e12d0741ca98b5673ae0269014-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d22b25979f7dae4a4c4a9f264bde289f-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b2ad71f1d2c6637ad6b03f6513cc3a80-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/33a20480ae9fa80134f8ce9a0c1e32f6-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/3b4e592899b5f44421d2701fe07bea69-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/ab8800c1bb96c53e5d85ff762ae5111a-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/f5723c4a74c4dab6fbbe7dd7064c41ed-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b216d4a92763e724dd9c8174596ba97c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/fc9d8367b5dd3a920592116638d0edfa-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "5125 Clarendon Rd",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "size": 1641,
+            "salestatus": "",
+            "price": 224900,
+            "daysonmarket": 32
+        },
+        "description": "Beautiful brick home on over a quarter acre of land. Large fenced back yard.  Completely updated, including roof, windows, insulation, kitchen, baths, flooring, skylights, enclosed Florida room, etc. Don't miss this one, it won't last long. Must see!!",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1972,
+                "sewer": "Public Sewer",
+                "watersource": "Public"
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "appliances": [
+                    "Dishwasher",
+                    "Range / Oven"
+                ],
+                "stories": 1,
+                "extra": [
+                    "Florida Room",
+                    "Skylight(s)",
+                    "Family Room",
+                    "Living/Dining Combo",
+                    "Eating Space-Kitchen",
+                    "Kitchen/Family Combo",
+                    "Pantry - Closet",
+                    "Cooking Island"
+                ]
+            },
+            "exteriordetails": {
+                "parking": "Garage, Garage - Attached, Covered",
+                "exteriormaterial": "Other, Wood, Brick",
+                "roofmaterial": "Shingle",
+                "lot": "0.27 Acres"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1601672400000,
+                "event": "Listed for sale",
+                "price": 224900
+            },
+            {
+                "date": 1409000400000,
+                "event": "Sold",
+                "price": 49900
+            },
+            {
+                "date": 1403816400000,
+                "event": "Listing removed",
+                "price": 49900
+            },
+            {
+                "date": 1395007200000,
+                "event": "Sold",
+                "price": 47800
+            },
+            {
+                "date": 1393365600000,
+                "event": "Listed for sale",
+                "price": null
+            },
+            {
+                "date": 1005084000000,
+                "event": "Sold",
+                "price": 90000
+            },
+            {
+                "date": 949960800000,
+                "event": "Sold",
+                "price": 85000
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/3242-Ernest-St-Jacksonville-FL-32205/44468628_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/4b464d178787c6f7e9b7729bd611e99b-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/7d1d6beedb97fdc57ad6b431ec10aa67-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/d8206206ada726d923279725dd3301dd-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/fa327e591c2d12dbee4ef73de743d7a4-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/3d102333150da15e68bae9ba7499bd09-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/9eaa01fb145c0c81d12e0bc39ad7bd30-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/af043778f675df707c30b2111b93fc70-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/cf877875fbe2dd0a2c6cb9049589967d-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/57a8a6dd98d0ad52e01d3e84fee689ae-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/0c8ee98b6029b26e0420b19eaba74c2d-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/fd7b7904ae7b6729dbb2e34139ad07b9-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/a4c997a66894411d367bc9d41caa6b11-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/0b246d59b20cb813b1c127a08a236740-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/81ab19888e2a7cc16cd837c46ec81c36-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/f4bdabd39148a352eb2cb688aecadfd3-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/a522edce949fbc210333d1353de8f193-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/acc73de09133482193692cd6f240ae11-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/85831b396aaca1d59ed83f43178b02c9-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/68bf31e8200594a918ff3a50aaaac44d-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/aee15916f441b86e1204bc769b6cd9fe-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/c06576d1bbe7871dcd974b0e723ef223-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/0036016ea46d833fa676c31b27174918-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/9f73feda4b742c429fc1e3f84d51daf0-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/ece8f2b2615cf1f2bbde54acaefbbcc3-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/ecdf79727cb0d0d7e0688089c3ea9013-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/a4faee20e6ba9d9d92e157b567bdb86d-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/f7794b8f4438909c54f2e23568d1f502-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/0ba47ad7ca22cbde983975c3c46f52f3-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/ae6c460c19c1570f7200f405cbe7674a-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/4c3a18db7606f71e0748e80b39136a30-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/4e997d654e548bb25771f2d1721a3a99-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/3e2e8338dda72415f0edee02ddfdedb5-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b6ec0f6dfc0fe3018491e66628d87727-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/35eae5e9e310a7fa6eb542fa9f2b0c47-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/9618a563ac72e13dd9e73a279dfe85cf-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "3242 Ernest St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 1,
+            "size": 1236,
+            "salestatus": "",
+            "price": 189900,
+            "daysonmarket": 47
+        },
+        "description": "Darn cutest Bungalow in Murray Hill! Nice tree lined street.  Picture perfect renovated Bungalow with gorgeous landscaped yard flower boxes and just beautiful back yard.  Brand new laminate wood throughout, new carpet, new ceiling fans, fixtures and doors.  Complete new bath! Spacious family room and Formal Dining room.  Large inside laundry room, knockdown ceilings, trendy new interior paint.  Extended driveway that goes to the back door, plenty of room for parking.",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1951,
+                "sewer": "Public Sewer",
+                "watersource": "Public"
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "appliances": [
+                    "Dishwasher",
+                    "Garbage disposal",
+                    "Microwave",
+                    "Range / Oven",
+                    "Refrigerator"
+                ],
+                "stories": 1,
+                "extra": [
+                    "Separate Dining Room",
+                    "Family Room"
+                ]
+            },
+            "exteriordetails": {
+                "parking": "Garage",
+                "exteriormaterial": "Wood",
+                "roofmaterial": "Shingle",
+                "lot": "5,142 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1602277200000,
+                "event": "Pending sale",
+                "price": 189900
+            },
+            {
+                "date": 1600981200000,
+                "event": "Back on market",
+                "price": 189900
+            },
+            {
+                "date": 1600808400000,
+                "event": "Pending sale",
+                "price": 189900
+            },
+            {
+                "date": 1600290000000,
+                "event": "Listed for sale",
+                "price": 189900
+            },
+            {
+                "date": 1596056400000,
+                "event": "Sold",
+                "price": 90000
+            },
+            {
+                "date": 1403730000000,
+                "event": "Listing removed",
+                "price": 850
+            },
+            {
+                "date": 1350684000000,
+                "event": "Listing removed",
+                "price": 75000
+            },
+            {
+                "date": 1342558800000,
+                "event": "Listed for sale",
+                "price": 75000
+            },
+            {
+                "date": 1146171600000,
+                "event": "Sold",
+                "price": 99000
+            },
+            {
+                "date": 1033074000000,
+                "event": "Sold",
+                "price": 125000
+            },
+            {
+                "date": 984607200000,
+                "event": "Sold",
+                "price": 63900
+            },
+            {
+                "date": 938642400000,
+                "event": "Sold",
+                "price": 32500
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/3029-College-St-Jacksonville-FL-32205/44471155_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/e6e289ad2773437fd34697072a7e0a44-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/70066e40301824d9f56940fc7499bfe5-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/534ba7376419270722f553195b84580c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/a8724246016937ab6d0efe2e90f80f37-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/1b2c32f9fec6729d9ffe65109ac0efe5-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b08b6398c74a42a3118a688f7d55ff96-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/eb64a566f08bef76ce4f824ed0766eeb-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/db7df66d044bbb153fd65da7a61452ab-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/dd6e230f7b268417af05f44f958110af-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/2d6e359113780db7e37b1d76293d37ac-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/7bfde0368adc1d5fb3ee5d1cbcdfa8e3-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "3029 College St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 4,
+            "bathrooms": 1,
+            "size": 1182,
+            "salestatus": "",
+            "price": 120000,
+            "daysonmarket": 264
+        },
+        "description": "New Roof! Come see this charming bungalow in the outside of heart of historic Murray Hill. This home has 3 bedrooms, 1 bath, and 1 non conforming bedroom, a separate family room. The laundry room leads to a private backyard with a fire pit with brick sitting, and a extended concrete pad ready for entertaining and a storage shed for your use. Enjoy all of what the Murray Hill area has to offer with a 5-minute walk to the breweries, library, restaurants and a 7 minute-drive to the Kent Campus of Florida State College of Jacksonville. With things to do inside and out, you are sure to fall in love, not only with this home but, also the area. Welcome Home!",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1927,
+                "sewer": "Public Sewer",
+                "watersource": "Public"
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "appliances": [
+                    "Range / Oven",
+                    "Refrigerator"
+                ],
+                "stories": 1,
+                "extra": [
+                    "Separate Dining Room",
+                    "Entrance Foyer",
+                    "Family Room",
+                    "Eating Space-Kitchen",
+                    "Pantry - Closet"
+                ]
+            },
+            "exteriordetails": {
+                "parking": "Garage, Off-street",
+                "exteriormaterial": "Brick",
+                "roofmaterial": "Shingle",
+                "lot": "4,791 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1603922400000,
+                "event": "Pending sale",
+                "price": 120000
+            },
+            {
+                "date": 1600030800000,
+                "event": "Listed for sale",
+                "price": 120000
+            },
+            {
+                "date": 1597352400000,
+                "event": "Listing removed",
+                "price": 120000
+            },
+            {
+                "date": 1596661200000,
+                "event": "Back on market",
+                "price": 120000
+            },
+            {
+                "date": 1594587600000,
+                "event": "Pending sale",
+                "price": 120000
+            },
+            {
+                "date": 1583186400000,
+                "event": "Back on market",
+                "price": 120000
+            },
+            {
+                "date": 1582063200000,
+                "event": "Pending sale",
+                "price": 120000
+            },
+            {
+                "date": 1581631200000,
+                "event": "Listed for sale",
+                "price": 120000
+            },
+            {
+                "date": 1449698400000,
+                "event": "Listing removed",
+                "price": 900
+            },
+            {
+                "date": 1442782800000,
+                "event": "Listed for rent",
+                "price": 900
+            },
+            {
+                "date": 1399237200000,
+                "event": "Sold",
+                "price": 17100
+            },
+            {
+                "date": 1398027600000,
+                "event": "Listing removed",
+                "price": null
+            },
+            {
+                "date": 1397163600000,
+                "event": "Listed for sale",
+                "price": null
+            },
+            {
+                "date": 1041199200000,
+                "event": "Sold",
+                "price": 17300
+            }
+        ]
+    },
+    {
+        "zurl": "https://www.zillow.com/homedetails/5342-Astral-St-Jacksonville-FL-32205/44467777_zpid/",
+        "images": [
+            "https://photos.zillowstatic.com/fp/814267443fdbe4ea984d32d783d9e67f-cc_ft_960.jpg",
+            "https://photos.zillowstatic.com/fp/8b2456351f3bff41692b507fd31553c5-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/93d3f87ef021c405f66f70d8531b8aed-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/47189cdd1ce918597cae1a3f9cc0abf9-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/71010fb2bf37fc5cfdc746b0fc984392-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e37588b093fb9850b50718d85c8890fe-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/99c410021c2b9b1a4ddb1c7e4313d771-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/ed0d786434d6ded71e0cf1e9573bf0f0-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/3289fce335fde5796ce640a7eb373971-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/129386a5498f270feeb0f97d0d6844a5-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/84a43a2815272ac60f80815f7ade6141-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e842f9d459b57fb919a8714770cfe872-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/4c94f6eb25cc5a921889190d2bc07eec-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/f81ac248f354921999ab04b3a9aa6dd4-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/579ceb040c8f8584c56d583065bb4764-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/fdb2281ccb1d0d427b1f31b52f1f3f1a-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/59fb9a54b1fbfe8f988fea0643edb79e-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/4b798708e6507f69dc8184e53dcb9d55-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/25d7298f1c693f34a5322c240a009ad0-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/9cadab19fd7b4fda356274b8b467e6dc-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e99cca3ee0a3c04443b126884f92f38d-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/715026603fad5c3e8ea72e63f69cb9e3-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/e14bd6d6b24f16edccc15340c8f30b80-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/06f7fb959b6ac8c27587edf70b00c559-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/a0f7d15b20956c16243a44933dbd28a6-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/b8b99de357a305a46f6e29d14abc26e8-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/14569c39c4ec0184101b161dbf8dbf16-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/7822e3588c89910fdb4dca1cb7383875-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/74bd6fdeaee501ada20ce93a21edd9af-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/318197636a1aadb34abc2d632421fa67-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/741c326e7cc7da54e859c1dfcdad8cc4-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/78d519ea6a32c7d159e967ee1192d79f-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/0d3d7f93647359637b5f63c43ba10caf-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/2db256dd92f53dc1023bd9553a06533c-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/5e7379e49a0032d9b613a5fa0f23d0f8-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/4015c1afb8914f87b33f32d89aebe108-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/fc8717f1e24eb9c1fde659d8e502f2c7-cc_ft_576.jpg",
+            "https://photos.zillowstatic.com/fp/444982561293b145169369ee84802777-cc_ft_576.jpg"
+        ],
+        "address": {
+            "street": "5342 Astral St",
+            "city": "Jacksonville",
+            "state": "FL",
+            "zipcode": "32205"
+        },
+        "general": {
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "size": 1576,
+            "salestatus": "",
+            "price": 175000,
+            "daysonmarket": 64
+        },
+        "description": "Great home for first time home buyer , 3 bedrooms 2 full bathrooms . 2 living space , open floor plan .  pluming been replaced couple years ago .garage been converted to a room. this will not last long  . come see it today .",
+        "specs": {
+            "general": {
+                "type": "Single Family",
+                "yearbuiled": 1947,
+                "sewer": "Public Sewer",
+                "watersource": "Public"
+            },
+            "interiordetails": {
+                "heating": "Forced air, Electric",
+                "cooling": "Central",
+                "appliances": [
+                    "Dishwasher",
+                    "Microwave",
+                    "Range / Oven",
+                    "Refrigerator"
+                ],
+                "stories": 1,
+                "extra": [
+                    "Living/Dining Combo"
+                ]
+            },
+            "exteriordetails": {
+                "parking": "Garage, Carport, Covered",
+                "exteriormaterial": "Composition",
+                "lot": "8,623 sqft"
+            }
+        },
+        "pricehistory": [
+            {
+                "date": 1602795600000,
+                "event": "Price change",
+                "price": 175000
+            },
+            {
+                "date": 1599685200000,
+                "event": "Price change",
+                "price": 185500
+            },
+            {
+                "date": 1598907600000,
+                "event": "Listed for sale",
+                "price": 200000
+            },
+            {
+                "date": 1440018000000,
+                "event": "Sold",
+                "price": 40000
+            },
+            {
+                "date": 1434488400000,
+                "event": "Listing removed",
+                "price": 42500
+            },
+            {
+                "date": 1431378000000,
+                "event": "Price change",
+                "price": 42500
+            },
+            {
+                "date": 1424901600000,
+                "event": "Price change",
+                "price": 48000
+            },
+            {
+                "date": 1402606800000,
+                "event": "Price change",
+                "price": 49900
+            },
+            {
+                "date": 1399669200000,
+                "event": "Listed for sale",
+                "price": 56900
+            }
+        ]
+    }
+]
