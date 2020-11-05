@@ -12,32 +12,46 @@ const ua = [
 
 const banList = ['vacantland', 'apartment', 'condo', 'manufactured'];
 
-exports.scrape = async (keysearch) => {
+exports.scrape = async (keysearch, maxResults) => {
     //'--no-sandbox', '--disable-setuid-sandbox'
-    puppeteer.use(pluginStealth());
+    //puppeteer.use(pluginStealth());
     const browser = await puppeteer.launch({
         headless: true,
         args: [
             '--window-size=1920,1080',
             '--no-sandbox',
             '--disable-dev-shm-usage',
+            '--disable-web-security'
         ],
         defaultViewport: null
     });
 
     const page = await browser.newPage();
+    await page.setRequestInterception(true);
+    page.on('request', req =>{
+        const wl = ['document', 'xhr', 'script', 'fetch'];
+        if(!wl.includes(req.resourceType())){
+            return req.abort();
+        }
+        req.continue();
+    });
+
+
     //page.on('console', consoleObj => console.log(consoleObj.text()));
     await page.setUserAgent(ua[0]);
     page.setDefaultNavigationTimeout(0);
 
     console.log('getting links...');
-    var urls = await getpropertiesurls(page, '32205');
+    var urls = await getpropertiesurls(page, keysearch);
+    if (maxResults != undefined) urls = urls.slice(0, maxResults);
+
     console.log(`found ${urls.length} links, getting data start...`);
     const p = await urlstoproperties(page, urls);
     await browser.close();
     return p;
 }
 
+// get properties  urls
 async function getpropertiesurls(page, searchkey) {
     await page.goto(`https://www.zillow.com/homes/for_sale/${searchkey}_rb/`);
 
@@ -90,12 +104,18 @@ async function pageurls(page, urls, pnumber, max) {
     var urls = await pageurls(page, urls, tmp, max);
     return urls.concat(u);
 }
+//end get properties urls
 
-async function getpropertyjson(page, url) {
-    //console.log(url);
+
+async function getpropertyjson(page, url, index) {
+    let random = randomWaiting();
+    await sleep(random);
+
     await page.goto(url, { waitUntil: 'networkidle0', timeout: 0 });
     const u = await page.url();
-    console.log('url: ', u);
+    console.log(`${index}, url: `, u);
+
+    // == 1. recapcha
     if (u.toLowerCase().indexOf('captcha') != -1) {
         console.warn('Warning: recaptcha, retrying...');
         await solve(page);
@@ -103,34 +123,35 @@ async function getpropertyjson(page, url) {
         await page.waitForNavigation({ waitUntil: 'networkidle0' })
         const cu = await page.url();
         console.log('== current url: ', cu);
+        if (cu != url) return { failedUrl: url };
     };
 
+    // == 2. blank page
     const sel = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile'
     const res = await page.waitForSelector(sel, { visible: true, timeout: 20000 }).catch((e) => {
         console.error('Could not load selector, retrying...');
         return 'error';
     });
 
+    // == 3. retrying black page
     if (res == 'error') {
         const cu = await page.url();
         if (cu == url) {
-            await page.goto(url, { waitUntil: 'networkidle0', timeout: 0 });
-            const r = await page.waitForSelector(sel, { visible: true, timeout: 20000 }).then(() => {
-                return true;
-            }).catch(e => {
+            await page.reload(true);
+            const r = await page.waitForSelector(sel, { visible: true, timeout: 20000 }).catch(e => {
+                console.log('retrying faild!')
                 return 'error';
             });
-            if (r == 'error') return undefined;
+            if (r == 'error') return { failedUrl: url };
         }
     }
-
 
     try {
 
         // ==== get facts and features ====
         const faf = await getfactsandfeatures(page);
 
-        if(isBan(faf.spec.general.type)) { console.log('Ban - skip property'); return 'skip'; }
+        if (isBan(faf.spec.general.type)) { console.log('Ban - skip property'); return 'skip'; }
 
         // ==== get images ====
         const images = await getimages(page);
@@ -163,7 +184,7 @@ async function getpropertyjson(page, url) {
     }
     catch (e) {
         console.log(`== getpropertyjson() url: ${url}, \n== error: ` + e);
-        return undefined;
+        return { failedUrl: url };
     }
 }
 
@@ -298,6 +319,9 @@ async function getfactsandfeatures(page) {
         // Exterior details 
         var exmaterial, parking, roof, conmaterial, foundation, lot;
 
+        let selType = 'div#ds-data-view div.ds-expandable-card-section-default-padding ul.ds-home-fact-list li.ds-home-fact-list-item span.Text-aiai24-0.gbgvjX';
+        type = document.querySelectorAll(selType)[0].innerText;
+
         let div = document.querySelectorAll('div#ds-data-view ul li div.sc-puFaA.lnNxfr div.sc-pAMyN.hdvvgV');
         for (let i = 0; i < div.length; i++) {
             const elm = div[i];
@@ -306,9 +330,9 @@ async function getfactsandfeatures(page) {
 
             switch (tmp) {
                 //general info
-                case 'type and style':
-                    type = getval(ul, 'hometype');
-                    break;
+                // case 'type and style':
+                //     type = getval(ul, 'hometype');
+                //     break;
                 case 'condition':
                     yearbuiled = getval(ul, 'yearbuilt');
                     break;
@@ -437,26 +461,48 @@ async function getpricehistory(page) {
 
 async function urlstoproperties(page, urls) {
     const properties = [];
+    const failedProperties = [];
     var scount = 0;
-    for (let i = 0; i <  35/*urls.length*/; i++) {
+    for (let i = 0; i < urls.length; i++) {
         const e = urls[i];
-        let tmp = await getpropertyjson(page, e);
-        if (tmp != undefined && tmp != 'skip')
-            properties.push(tmp);
-        else if(tmp == 'skip')
-        scount++;
+        let tmp = await getpropertyjson(page, e, i);
+        if (tmp != undefined && tmp != 'skip' && tmp.failedUrl == undefined) properties.push(tmp);
+        else if (tmp == 'skip') scount++;
+        else if (tmp != undefined && tmp.failedUrl != undefined) failedProperties.push(tmp.failedUrl);
     }
+
+    if (failedProperties.length != 0) {
+        console.log(`done, retrying ${failedProperties.length} faild properties...`);
+        for (let i = 0; i < failedProperties.length; i++) {
+            const e = failedProperties[i];
+            let tmp = await getpropertyjson(page, e, i);
+            if (tmp != undefined && tmp != 'skip' && tmp.failedUrl == undefined) properties.push(tmp);
+            else if (tmp == 'skip') scount++;
+        }
+    }
+
+
     console.log('writing to file...')
     fs.writeFileSync('lastrun.json', JSON.stringify(properties));
-    console.log(`done getting properties. --success: ${properties.length} --,   --failed: ${(urls.length - properties.length)} --,  -- skiped: ${scount} --`);
+    console.log(`done getting properties. --success: ${properties.length} --,   --failed: ${(urls.length - (properties.length + scount))} --,  -- skiped: ${scount} --`);
     return properties;
 }
 
-function isBan(type){
+function isBan(type) {
     for (let i = 0; i < banList.length; i++) {
         const e = banList[i];
-        if(e == type.toLowerCase().replace(/\s+/g, ''))
+        if (e == type.toLowerCase().replace(/\s+/g, ''))
             return true;
     }
     return false;
 }
+
+function randomWaiting() {
+    min = Math.ceil(3000);
+    max = Math.floor(5500);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
