@@ -1,7 +1,5 @@
-const puppeteer = require('puppeteer-extra');
-const pluginStealth = require('puppeteer-extra-plugin-stealth')
+const puppeteer = require('puppeteer');
 const fs = require('fs');
-const solve = require('./solver');
 
 const ua = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36',
@@ -12,9 +10,7 @@ const ua = [
 
 const banList = ['vacantland', 'apartment', 'condo', 'manufactured'];
 
-exports.scrape = async (keysearch, maxResults) => {
-    //'--no-sandbox', '--disable-setuid-sandbox'
-    //puppeteer.use(pluginStealth());
+exports.scrape = async (keysearch, maxResults, callback) => {
     const browser = await puppeteer.launch({
         headless: true,
         args: [
@@ -27,29 +23,119 @@ exports.scrape = async (keysearch, maxResults) => {
     });
 
     const page = await browser.newPage();
-    await page.setRequestInterception(true);
-    page.on('request', req =>{
-        const wl = ['document', 'xhr', 'script', 'fetch'];
-        if(!wl.includes(req.resourceType())){
-            return req.abort();
-        }
-        req.continue();
-    });
+    //await page.setRequestInterception(true);
+
+
+    // page.on('request', req => {
+    //     //const wl = ['document', 'xhr', 'script', 'fetch', 'text/plain', 'websocket'];
+    //     const bl = ['gif', 'png', 'jpeg', 'svg+xml',];
+    //     if (bl.includes(req.resourceType())) {
+    //         return req.abort();
+    //     }
+    //     req.continue();
+    // });
+    // const reses = [];
+    // page.on('response', async (res) => {
+    //     if (res.url().indexOf('graphql') != -1)
+    //         reses.push({
+    //             url: res.url(),
+    //             header: res.headers(),
+    //             request: res.request(),
+    //             json: await res.json().catch(e => {return { } }),     
+    //         });
+    // });
 
 
     //page.on('console', consoleObj => console.log(consoleObj.text()));
     await page.setUserAgent(ua[0]);
-    page.setDefaultNavigationTimeout(0);
+    //page.setDefaultNavigationTimeout(0);
 
-    console.log('getting links...');
-    var urls = await getpropertiesurls(page, keysearch);
-    if (maxResults != undefined) urls = urls.slice(0, maxResults);
+    const testArr = ['4436023', '44514477', '44525176', '44477743'];
+    const test = await getProperty(page, testArr[0]);
+    //console.log(test);
 
-    console.log(`found ${urls.length} links, getting data start...`);
-    const p = await urlstoproperties(page, urls);
+    // console.log('getting links...');
+    // var urls = await getpropertiesurls(page, keysearch);
+    // if (maxResults != undefined) urls = urls.slice(0, maxResults);
+
+    //await page.goto('https://www.zillow.com/homedetails/682-Bridal-Ave-Jacksonville-FL-32205/44480127_zpid/', { waitUntil: 'networkidle0', timeout: 0 })
+
     await browser.close();
-    return p;
+    fs.writeFileSync('responses.json', test);
+    return [];
 }
+
+
+async function getProperty(page, url) {
+    const id = urlToId(url);
+    await page.goto(`https://zscraper.000webhostapp.com/?zid=${id}`, { waitUntil: 'load', timeout: 0 });
+    sleep(1000);
+    const tmp =  await page.evaluate(async() => {
+        return await getproperty.then(data => { return data }).catch(e => {return e});
+    });
+    const prop = JSON.parse(tmp).data.property;
+    let images = toImageArray(prop.hugePhotos);
+    console.log(images)
+    return prop;
+    // return {
+    //     zurl: url,
+    //     images: images,
+    //     address: header.address,
+    //     general: {
+    //         bedrooms: faf.bedrooms,
+    //         bathrooms: faf.bathrooms,
+    //         size: faf.size,
+    //         salestatus: header.salestatus,
+    //         price: header.price,
+    //         daysonmarket: ov.daysonmarket
+    //     },
+    //     description: ov.description,
+    //     specs: {
+    //         general: {
+    //             type: type,
+    //             yearbuiled: parseInt(yearbuiled),
+    //             sewer: sewer,
+    //             watersource: watersource
+    //         },
+    //         interiordetails: {
+    //             heating: heating,
+    //             cooling: cooling,
+    //             flooring: flooring,
+    //             appliances: appliances,
+    //             stories: stories,
+    //             basement: basement,
+    //             extra: extra
+    //         },
+    //         exteriordetails: {
+    //             parking: parking,
+    //             foundation: foundation,
+    //             exteriormaterial: exmaterial,
+    //             constructionmaterials: conmaterial,
+    //             roofmaterial: roof,
+    //             lot: lot
+    //         }
+    //     },
+    //     pricehistory: []
+    // }
+}
+
+
+
+function toImageArray(obj){
+    const arr = [];
+
+    for (let i = 0; i < obj.length; i++) {
+        const e = obj[i];
+        arr.push(e.url);
+    }
+    return arr;
+}
+
+
+
+
+
+
 
 // get properties  urls
 async function getpropertiesurls(page, searchkey) {
@@ -107,366 +193,17 @@ async function pageurls(page, urls, pnumber, max) {
 //end get properties urls
 
 
-async function getpropertyjson(page, url, index) {
-    let random = randomWaiting();
-    await sleep(random);
-
-    await page.goto(url, { waitUntil: 'networkidle0', timeout: 0 });
-    const u = await page.url();
-    console.log(`${index}, url: `, u);
-
-    // == 1. recapcha
-    if (u.toLowerCase().indexOf('captcha') != -1) {
-        console.warn('Warning: recaptcha, retrying...');
-        await solve(page);
-
-        await page.waitForNavigation({ waitUntil: 'networkidle0' })
-        const cu = await page.url();
-        console.log('== current url: ', cu);
-        if (cu != url) return { failedUrl: url };
-    };
-
-    // == 2. blank page
-    const sel = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile'
-    const res = await page.waitForSelector(sel, { visible: true, timeout: 20000 }).catch((e) => {
-        console.error('Could not load selector, retrying...');
-        return 'error';
-    });
-
-    // == 3. retrying black page
-    if (res == 'error') {
-        const cu = await page.url();
-        if (cu == url) {
-            await page.reload(true);
-            const r = await page.waitForSelector(sel, { visible: true, timeout: 20000 }).catch(e => {
-                console.log('retrying faild!')
-                return 'error';
-            });
-            if (r == 'error') return { failedUrl: url };
-        }
-    }
-
-    try {
-
-        // ==== get facts and features ====
-        const faf = await getfactsandfeatures(page);
-
-        if (isBan(faf.spec.general.type)) { console.log('Ban - skip property'); return 'skip'; }
-
-        // ==== get images ====
-        const images = await getimages(page);
-
-        // ==== get bedrooms, bathrooms, size, address ====
-        const header = await getheader(page);
-
-        // ==== get overview ====
-        const ov = await getoverview(page);
-
-        //==== get price history ====
-        const ph = await getpricehistory(page);
-
-        return {
-            zurl: url,
-            images: images,
-            address: header.address,
-            general: {
-                bedrooms: faf.bedrooms,
-                bathrooms: faf.bathrooms,
-                size: faf.size,
-                salestatus: header.salestatus,
-                price: header.price,
-                daysonmarket: ov.daysonmarket
-            },
-            description: ov.description,
-            specs: faf.spec,
-            pricehistory: ph
-        };
-    }
-    catch (e) {
-        console.log(`== getpropertyjson() url: ${url}, \n== error: ` + e);
-        return { failedUrl: url };
-    }
-}
-
-async function getimages(page) {
-
-    await page.evaluate(() => {
-        const selq = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile ul li';
-        let lis = document.querySelectorAll(selq);
-
-        for (let i = 0; i < lis.length; i++) {
-            const el = lis[i];
-            setTimeout(() => {
-                el.scrollIntoView({ behavior: "smooth", block: "end", inline: "end" });
-            }, 10);
-        }
-        setTimeout(() => {
-            const selector = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile';
-            const elem = document.querySelector(selector);
-            elem.scrollTop = elem.scrollHeight;
-            console.log('== hight: ', elem.scrollHeight);
-        }, 30)
-    });
-    try {
-        await page.waitForSelector('#ds-container ul li figure').catch(e => {
-            console.warn('Warning: not all image loaded');
-            console.log(e);
-        });
-    }
-    catch (error) {
-        console.warn('Warning: not all image loaded');
-        console.log(error);
-
-    }
-    const imgs = await page.evaluate(() => {
-        const sel = '#ds-container > div.ds-media-col.ds-media-col-hidden-mobile > ul > li button img';
-        var im = document.querySelectorAll(sel);
-        var arr = [];
-        im.forEach(e => {
-            e.scrollIntoView();
-            arr.push(e.getAttribute('src'));
-        });
-        return arr;
-    });
-    return imgs;
-}
-
-async function getheader(page) {
-    const res = await page.evaluate(() => {
-        const price = document.querySelector('#ds-container div.ds-summary-row-container div h3 span.ds-value').innerText.replace(/[^0-9]+/g, "");
-
-        const salestatus = document.querySelector('#ds-container div.ds-data-col.ds-white-bg.ds-data-col-data-forward div.ds-chip div.sc-oUcyK.lbUOdM.ds-chip-removable-content span.sc-pzMyG.ijxQnZ.ds-status-details').innerText;
-
-        const add1 = document.querySelector('#ds-container header > h1.ds-address-container > span:nth-child(1)').innerText;
-        const add2 = document.querySelector('#ds-container header > h1.ds-address-container > span:nth-child(2)').innerText;
-
-        return {
-            price: parseInt(price),
-            salestatus: salestatus,
-            address: {
-                add1: add1,
-                add2: add2
-            }
-        }
-    });
-
-    let citystatezip = res.address.add2.split(',');
-    let statezip = citystatezip[1].trim().split(' ');
-
-    var address = {
-        street: res.address.add1.replace(',', '').trim(),
-        city: citystatezip[0].trim(),
-        state: statezip[0].trim(),
-        zipcode: statezip[1].trim()
-    }
-    res.address = address;
-    return res;
-}
-
-async function getoverview(page) {
-    const sel = '#ds-data-view ul div.ds-expandable-card-section-default-padding div.ds-overview-section div'
-    await page.waitForSelector(sel, { visible: true });
-    const ov = await page.evaluate(() => {
-        let des = document.querySelector('#ds-data-view ul div.ds-expandable-card-section-default-padding div.ds-overview-section div').innerText;
-        let dom = document.querySelector('#ds-data-view ul div.ds-expandable-card-section-default-padding div.sc-pCPXO.hbUalv div.Text-aiai24-0.bBtYeM').innerText;
-        let sellerdes = document.querySelector('#ds-data-view ul div.ds-expandable-card-section-default-padding div.Text-aiai24-0.sc-pZnSc.iCEFOv');
-        var res = {
-            description: des,
-            daysonmarket: parseInt(dom.replace(/[^0-9]+/g, ""))
-        };
-        if (sellerdes != null && des != sellerdes.innerText) res.sellerdes = sellerdes.innerText;
-        return res;
-    });
-    return ov;
-}
-
-async function getfactsandfeatures(page) {
-    await page.evaluate(() => {
-        let el = document.querySelectorAll('div#ds-container nav.mg5mjz-4.cdyiUb a');
-        el[1].click();
-
-        let btn = document.querySelector('div#ds-data-view footer');
-        btn.scrollIntoView();
-        btn.click();
-    });
-
-    const faf = await page.evaluate(() => {
-        // ==== helper function ====
-        function trimdot(str) {
-            let dots = str.indexOf(':') + 1;;
-            return str.substring(dots).trim();
-        }
-
-        function getval(ul, feature) {
-            for (let i = 0; i < ul.length; i++) {
-                const e = ul[i];
-                let span = e.querySelector('span').innerText;
-                let tmp = span.replace(/\s+/g, '');
-                if (tmp.toLowerCase().indexOf(feature) != -1) {
-                    return trimdot(span);
-                }
-            }
-            return undefined;
-        }
-        //===========================
-
-        //general info 
-        var type, yearbuiled, sewer, watersource, size;
-
-        // Interior details
-        var heating, cooling, flooring, appliances, stories, basement, extra, bedrooms, bathrooms;
-
-        // Exterior details 
-        var exmaterial, parking, roof, conmaterial, foundation, lot;
-
-        let selType = 'div#ds-data-view div.ds-expandable-card-section-default-padding ul.ds-home-fact-list li.ds-home-fact-list-item span.Text-aiai24-0.gbgvjX';
-        type = document.querySelectorAll(selType)[0].innerText;
-
-        let div = document.querySelectorAll('div#ds-data-view ul li div.sc-puFaA.lnNxfr div.sc-pAMyN.hdvvgV');
-        for (let i = 0; i < div.length; i++) {
-            const elm = div[i];
-            let tmp = elm.querySelector('span.Text-aiai24-0.bBtYeM').innerText.toLowerCase();
-            let ul = elm.querySelectorAll('ul li');
-
-            switch (tmp) {
-                //general info
-                // case 'type and style':
-                //     type = getval(ul, 'hometype');
-                //     break;
-                case 'condition':
-                    yearbuiled = getval(ul, 'yearbuilt');
-                    break;
-                case 'utility':
-                    sewer = getval(ul, 'sewerinformation');
-                    break;
-                case 'other interior features':
-                    size = parseInt(getval(ul, 'totalinteriorlivablearea').replace(/[^0-9]+/g, ""));
-                    break;
-
-                // Interior details
-                case 'bedrooms and bathrooms':
-                    bedrooms = parseInt(getval(ul, 'bedrooms'));
-                    bathrooms = parseInt(getval(ul, 'bathrooms'));
-                    break;
-                case 'cooling':
-                    cooling = getval(ul, 'coolingfeatures');
-                    break;
-                case 'heating':
-                    heating = getval(ul, 'heatingfeatures');
-                    break;
-                case 'flooring':
-                    let t = getval(ul, 'flooring');
-                    if (t = undefined && t.toLowerCase() != 'other') flooring = t;
-                    break;
-                case 'appliances':
-                    let at = getval(ul, 'appliancesincluded');
-                    if (at != undefined) appliances = at.split(', ');
-                    break;
-
-                // Exterior details 
-                case 'property':
-                    exmaterial = getval(ul, 'exteriorfeatures');
-                    stories = parseInt(getval(ul, 'stories'));
-                    break;
-                case 'parking':
-                    parking = getval(ul, 'parkingfeatures');
-                    break;
-                case 'material information':
-                    conmaterial = getval(ul, 'constructionmaterials');
-                    foundation = getval(ul, 'foundation');
-                    let mt = getval(ul, 'roof');
-                    if (mt != undefined && mt.toLowerCase() != 'other') matroof = mt;
-                    break;
-                case 'lot':
-                    lot = getval(ul, 'lotsize');
-                    break;
-            }
-        }
-
-        //Other facts
-        const otherFacts = document.querySelectorAll('div#ds-data-view div.sc-puFaA.lnNxfr div.sc-pAMyN.iOhXWD ul li');
-
-        roof = getval(otherFacts, 'roof');
-        basement = getval(otherFacts, 'basement');
-        watersource = getval(otherFacts, 'watersource');
-        let et = getval(otherFacts, 'interiorfeatures');
-        if (et != undefined) extra = et.split(', ');
-
-        return {
-            size: size,
-            bathrooms: bathrooms,
-            bedrooms: bedrooms,
-            spec: {
-                general: {
-                    type: type,
-                    yearbuiled: parseInt(yearbuiled),
-                    sewer: sewer,
-                    watersource: watersource
-                },
-                interiordetails: {
-                    heating: heating,
-                    cooling: cooling,
-                    flooring: flooring,
-                    appliances: appliances,
-                    stories: stories,
-                    basement: basement,
-                    extra: extra
-                },
-                exteriordetails: {
-                    parking: parking,
-                    foundation: foundation,
-                    exteriormaterial: exmaterial,
-                    constructionmaterials: conmaterial,
-                    roofmaterial: roof,
-                    lot: lot
-                }
-            }
-        }
-    });
-    return faf;
-}
-
-async function getpricehistory(page) {
-    const ph = await page.evaluate(() => {
-        const table = document.querySelector('div#ds-data-view div.sc-1ezbn92-4.cZFcDZ table.sc-1ezbn92-2.hxLCYs');
-
-        if (table == null || table == undefined) return undefined;
-        const tfoot = table.querySelector('tfoot button');
-
-        if (tfoot != undefined) {
-            tfoot.click();
-            tfoot.scrollIntoView({ behavior: "smooth", block: "end", inline: "end" });
-        }
-
-        const tr = table.querySelectorAll('tbody tr.sc-1ezbn92-3.sc-1ezbn92-6.iZtLmp');
-
-        var phl = [];
-        tr.forEach(e => {
-            const tds = e.querySelectorAll('td span.sc-1ezbn92-20.mEqIW');
-            let date = tds[0].innerText;
-            let d = new Date(date);
-            let event = tds[1].innerText;
-            let price = parseInt(tds[2].innerText.replace(/[^0-9]+/g, ""));
-            if (price == null) price = undefined;
-            phl.push({
-                date: d.getTime(),
-                event: event,
-                price: price
-            });
-        });
-        return phl;
-    });
-    return ph;
-}
-
-async function urlstoproperties(page, urls) {
+async function urlstoproperties(page, urls, callback) {
     const properties = [];
     const failedProperties = [];
     var scount = 0;
     for (let i = 0; i < urls.length; i++) {
         const e = urls[i];
         let tmp = await getpropertyjson(page, e, i);
-        if (tmp != undefined && tmp != 'skip' && tmp.failedUrl == undefined) properties.push(tmp);
+        if (tmp != undefined && tmp != 'skip' && tmp.failedUrl == undefined) {
+            properties.push(tmp);
+            callback(tmp);
+        }
         else if (tmp == 'skip') scount++;
         else if (tmp != undefined && tmp.failedUrl != undefined) failedProperties.push(tmp.failedUrl);
     }
@@ -476,7 +213,10 @@ async function urlstoproperties(page, urls) {
         for (let i = 0; i < failedProperties.length; i++) {
             const e = failedProperties[i];
             let tmp = await getpropertyjson(page, e, i);
-            if (tmp != undefined && tmp != 'skip' && tmp.failedUrl == undefined) properties.push(tmp);
+            if (tmp != undefined && tmp != 'skip' && tmp.failedUrl == undefined) {
+                properties.push(tmp);
+                callback(tmp);
+            }
             else if (tmp == 'skip') scount++;
         }
     }
@@ -488,6 +228,10 @@ async function urlstoproperties(page, urls) {
     return properties;
 }
 
+
+
+
+//==================
 function isBan(type) {
     for (let i = 0; i < banList.length; i++) {
         const e = banList[i];
@@ -496,13 +240,13 @@ function isBan(type) {
     }
     return false;
 }
-
-function randomWaiting() {
-    min = Math.ceil(3000);
-    max = Math.floor(5500);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-  }
+}
+function urlToId(str) {
+    var indexOfZipID = str.lastIndexOf("_zpid/");
+    var res = str.slice(0, indexOfZipID);
+
+    return res.slice(res.lastIndexOf("/") + 1, res.length);
+
+}

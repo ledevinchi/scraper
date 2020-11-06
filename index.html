@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <pre id="txt">
+
+        </pre>
+    </div>
+    <script>
+        var getproperty = new Promise((resolve, reject) => {
+            var u = new URL(location.href);
+            const zpid = u.searchParams.get("zid");
+
+            if (zpid == undefined) { reject('not id parameter'); return; }
+
+            console.log(zpid);
+            const qid = '57600eab225d9ca2c61836401a943d82';
+            const url = `https://www.zillow.com/graphql/?zpid=${zpid}&contactFormRenderParameter=&queryId=${qid}&operationName=ForSaleDoubleScrollFullRenderQuery`;
+            console.log(url);
+            var postData = JSON.stringify({
+                "operationName": "ForSaleDoubleScrollFullRenderQuery",
+                "variables": {
+                    "zpid": zpid,
+                    "contactFormRenderParameter":
+                    {
+                        "zpid": zpid,
+                        "platform": "desktop",
+                        "isDoubleScroll": true
+                    }
+                },
+                "clientVersion": "home-details/6.0.11.2978.master.5cba139",
+                "queryId": qid
+            });
+            var xhr = new XMLHttpRequest();
+            var counter = 0;
+            var arr = [];
+            xhr.onreadystatechange = () => {
+                console.log(xhr.status);
+                if (xhr.status == 200) {
+                    if (xhr.response != "") {
+                        arr.push(xhr.responseText);
+                        let property = tryParse(xhr.responseText);
+                        if (property == false) return;
+                        console.log(property.data.property);
+                        var str = JSON.stringify(property.data.property);
+                        resolve(str);
+                        return;
+                    }
+                    else if (counter == 2) reject('error');
+                    else counter++;
+                }
+                else if (xhr.status != 0) reject(xhr);
+            }
+            xhr.open('POST', url, true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(postData);
+        });
+
+        function tryParse(text) {
+            try {
+                return JSON.parse(text);
+            }
+            catch (e) {
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
